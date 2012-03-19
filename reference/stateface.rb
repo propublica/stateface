@@ -63,20 +63,20 @@ STATES.each { |s| state_characters[s[1]] = s[4] }
 template = %q{
 <html>
 <head><style>
-@font-face { font-family: Minimaps-Regular; src: url('Minimaps-Regular.otf'); } 
+@font-face { font-family: StateFace-Regular; src: url('../font/StateFace-Regular.otf'); } 
 body { font-size: 16px; font-family: Helvetica, Arial, sans-serif; width: 960px; margin: 10px auto; }
 div { clear:both; height: 500px; margin-bottom: 30px;}
 td#minimap { width: 15px;}
 table { font-size: 16px; width: 200px ; margin: 10px 0; float: left; margin-right: 40px; }
-table.minimaps td { border-bottom: 1px silver solid; padding: 5px; }
-#minimap { font-family: 'Minimaps-Regular'; text-align: center; vertical-align: top;}
+table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
+#minimap { font-family: 'StateFace-Regular'; text-align: center; vertical-align: top;}
 </style></head>
-<body><h1>Minimaps Keyboard Map</h1>
-<div><table class="minimaps">
+<body><h1>StateFace Keyboard Map</h1>
+<div><table class="StateFace">
 <% STATES.sort.each_with_index do |state,idx| %>
 <tr><td id="minimap"><%= state[4] %></td><td><%= state[2] %></td><td><%= state[4] %></td></tr>
 <% if [13,27,41].include?(idx) %>
-</table><table class="minimaps">
+</table><table class="StateFace">
 <% end %>
 <% end %>
 </table></div>
