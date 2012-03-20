@@ -6,6 +6,8 @@ It's designed to be used at small sizes, and the shapes have been highly simplif
 
 At ProPublica we're using it in our [super PAC tracker](http://projects.propublica.org/pactrack).
 
+Download: [ZIP](http://propublica.github.com/stateface/pkg/state-face.zip) [tar.gz](http://propublica.github.com/stateface/pkg/state-face.tar.gz)
+
 ## How to Use
 
 The easiest way to us StateFace on the web is to use FontSquirrel's technique to serve StateFace in a reliably cross-platform way:
@@ -32,9 +34,10 @@ The easiest way to us StateFace on the web is to use FontSquirrel's technique to
             font-style: normal;
         }
 
-3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](reference/stateface.json) for programmatic access.
+3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](http://propublica.github.com/stateface/reference/stateface.json) for programmatic access.
 
-If you just want the OpenType font to use in a print layout you can [download it here](font/StateFace-Regular.otf).
+If you just want the OpenType font to use in a print layout you can [download it here](http://propublica.github.com/stateface/font/StateFace-Regular.otf).
+
 ## StateFace Keyboard Map
 
 <%= table %>
@@ -47,10 +50,10 @@ Each state is projected using State Plane, and the U.S. (lowercase z) is project
 
 The [Glyphs Mini](http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12) `.glyphs` file is [included in the repo](http://propublica.github.com/stateface/font/stateface.glyphs) if any type (especially hinting) experts want to try their hand at tuning it.
 
-FontSquirrel's [FontFace Generator](http://www.fontsquirrel.com/fontface/generator) generated the files in `font/webfont` To generate the files in webfont.
+FontSquirrel's [FontFace Generator](http://www.fontsquirrel.com/fontface/generator) generated the files in `font/webfont`.
 
-We projected `.eps` files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Running `make state-plane` or `make albers` will re-make the EPS files if you need to do that for some reason.
-
+If you want to re-make the `.eps` files the `tools` directory includes a program to do so. You'll need to have [GDAL](http://www.gdal.org/) installed.
+Running `make state-plane` or `make albers` will make a fresh copy.
 
 ## License
 

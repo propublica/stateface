@@ -10,4 +10,8 @@ publish:
 docs:
 	cd reference && ruby stateface.rb
 
-.PHONY: publish state-plan albers docs
+pkg:
+	zip -r pkg/stateface.zip font
+	tar -cvzf pkg/stateface.tar.gz font
+
+.PHONY: publish state-plan albers docs pkg

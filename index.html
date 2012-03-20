@@ -389,9 +389,10 @@
 
 <p>The <a href="http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12">Glyphs Mini</a> <code>.glyphs</code> file is <a href="http://propublica.github.com/stateface/font/stateface.glyphs">included in the repo</a> if any type (especially hinting) experts want to try their hand at tuning it.</p>
 
-<p>FontSquirrel's <a href="http://www.fontsquirrel.com/fontface/generator">FontFace Generator</a> generated the files in <code>font/webfont</code> To generate the files in webfont.</p>
+<p>FontSquirrel's <a href="http://www.fontsquirrel.com/fontface/generator">FontFace Generator</a> generated the files in <code>font/webfont</code>.</p>
 
-<p>We projected <code>.eps</code> files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Running <code>make state-plane</code> or <code>make albers</code> will re-make the EPS files if you need to do that for some reason.</p>
+<p>If you want to re-make the <code>.eps</code> files the <code>tools</code> directory includes a program to do so. You'll need to have <a href="http://www.gdal.org/">GDAL</a> installed.
+Running <code>make state-plane</code> or <code>make albers</code> will make a fresh copy.</p>
 
 <h2>License</h2>
 
