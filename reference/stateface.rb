@@ -70,26 +70,25 @@ template = %q{
 <body>
   <%= RDiscount.new(File.read '../README.md').to_html %>
   <h2>StateFace Keyboard Map</h2>
-  <div id="font-table">
-    <table class="StateFace">
-      <% STATES.sort.each_with_index do |state,idx| %>
-        <tr>
-          <td class="minimap"><%= state[4] %></td>
-          <td><%= state[2] %></td>
-          <td><%= state[4] %></td>
-        </tr>
-        <% if [13,27,41].include?(idx) %>
-          </table><table class="StateFace">
+  <div>
+    <% STATES.sort.each_slice(18) do |group| %>
+      <table class="StateFace">
+        <% group.each do |state| %>
+          <tr>
+            <td class="minimap"><%= state[4] %></td>
+            <td><%= state[2] %></td>
+            <td><%= state[4] %></td>
+          </tr>
         <% end %>
-      <% end %>
-    </table>
+      </table>
+    <% end %>
   </div>
   </body>
 </html>
 }
 
 File.open('../index.html', 'w') do |f|
-  f.write ERB.new(template).result
+  f.write ERB.new(template).result(binding)
 end
 
 File.open('stateface.json', 'w') do |f|

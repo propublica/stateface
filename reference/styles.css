@@ -35,10 +35,9 @@ div#font-table {
 
 table {
   font-size: 16px;
-  width: 200px;
-  margin: 10px 0;
+  width: 190px;
   float: left;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 table.StateFace td {

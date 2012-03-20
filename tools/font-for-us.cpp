@@ -16,7 +16,8 @@ typedef struct {
 
 void help(){
   fprintf (stderr,
-    "\nusage: fonts-for-us <shpfile> -p <proj> -s <simplification> -n <name-field> -f <filter>\n"
+    "font-for-us generates eps files for StateFace."
+    "\nusage: font-for-us <shpfile> -p <proj> -s <simplification> -n <name-field> -f <filter>\n"
     "\n"
     "Options:\n"
     "  -p projection as in an OGR readable format. (required)\n"

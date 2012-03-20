@@ -41,7 +41,7 @@ If you just want the OpenType font to use in a print layout you can [download it
 
 Each state is projected using State Plane, and the U.S. (lowercase z) is projected using [Texas Centric Albers Equal Area](http://spatialreference.org/ref/epsg/3083/). The outlines are from [Natural Earth data](http://www.naturalearthdata.com/). See Natural Earth data's [terms of use](http://www.naturalearthdata.com/about/terms-of-use/) for details.
 
-## How We Did It
+## Forking and Contributing
 
 We projected `.eps` files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Running `make state-plane` or `make albers` will re-make the EPS files if you need to do that for some reason.
 
