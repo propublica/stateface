@@ -59,10 +59,11 @@ table.StateFace td {
 }
 
 #us {
-  display: inline-block;
+  display: inline;
   width: 100px;
   font-family: 'StateFaceRegular';
   font-size: 80px;
+  height: 76px;
   position: relative;
   top: 20px;
 }
