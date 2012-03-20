@@ -1,11 +1,252 @@
-<html>
 
+<html>
+<head><style>
+@font-face { font-family: StateFace-Regular; src: url('../font/StateFace-Regular.otf'); } 
+body { font-size: 16px; font-family: Helvetica, Arial, sans-serif; width: 960px; margin: 10px auto; }
+div { clear:both; height: 500px; margin-bottom: 30px;}
+td#minimap { width: 15px;}
+table { font-size: 16px; width: 200px ; margin: 10px 0; float: left; margin-right: 40px; }
+table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
+#minimap { font-family: 'StateFace-Regular'; text-align: center; vertical-align: top;}
+</style></head>
+<body>
 <h1>StateFace</h1>
 
-<p>
-A font you can use in your web apps when you want to show tiny state shapes. Uses USGS state plane projections. 
-</p>
+<p>A font you can use in your web apps when you want tiny state shapes as a design element.</p>
 
-<p><a href="reference/stateface.html">Here's a character reference.</a></p>
+<h2>How to Use</h2>
 
-</html>
+<p>If you just want the OpenType font you can <a href="tk">download it here</a>.</p>
+
+<h2>Projection Info</h2>
+
+<p>Each state is projected using State Plane, and the U.S. (lowercase z) is projected using <a href="http://spatialreference.org/ref/epsg/3083/">Texas Centric Albers Equal Area</a>. The outlines are from <a href="http://www.naturalearthdata.com/">Natural Earth data</a>. See Natural Earth data's <a href="http://www.naturalearthdata.com/about/terms-of-use/">terms of use</a> for details.</p>
+
+<h2>How We Did It</h2>
+
+<p>We projected <code>.eps</code> files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Run <code>make blah</code> will re-make the EPS files if you need to do that for some reason.</p>
+
+<p>We used <a href="http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12">Glyphs Mini</a> to assemble the font and FontSquirrel's <a href="http://www.fontsquirrel.com/fontface/generator">FontFace Generator</a> to auto-hint and generate EOT and WOFF files.</p>
+
+<p>The raw <code>.glyphs</code> file is included in the repo if any hinting experts want to try their hand at tuning it.</p>
+<h2>StateFace Keyboard Map</h2>
+<div><table class="StateFace">
+
+<tr><td id="minimap">B</td><td>Ala.</td><td>B</td></tr>
+
+
+<tr><td id="minimap">A</td><td>Alaska</td><td>A</td></tr>
+
+
+<tr><td id="minimap">D</td><td>Ariz.</td><td>D</td></tr>
+
+
+<tr><td id="minimap">C</td><td>Ark.</td><td>C</td></tr>
+
+
+<tr><td id="minimap">E</td><td>Calif.</td><td>E</td></tr>
+
+
+<tr><td id="minimap">F</td><td>Colo.</td><td>F</td></tr>
+
+
+<tr><td id="minimap">G</td><td>Conn.</td><td>G</td></tr>
+
+
+<tr><td id="minimap">H</td><td>Del.</td><td>H</td></tr>
+
+
+<tr><td id="minimap">y</td><td>D.C.</td><td>y</td></tr>
+
+
+<tr><td id="minimap">I</td><td>Fla.</td><td>I</td></tr>
+
+
+<tr><td id="minimap">J</td><td>Ga.</td><td>J</td></tr>
+
+
+<tr><td id="minimap">K</td><td>Hawaii</td><td>K</td></tr>
+
+
+<tr><td id="minimap">M</td><td>Idaho</td><td>M</td></tr>
+
+
+<tr><td id="minimap">N</td><td>Ill.</td><td>N</td></tr>
+
+</table><table class="StateFace">
+
+
+<tr><td id="minimap">O</td><td>Ind.</td><td>O</td></tr>
+
+
+<tr><td id="minimap">L</td><td>Iowa</td><td>L</td></tr>
+
+
+<tr><td id="minimap">P</td><td>Kan.</td><td>P</td></tr>
+
+
+<tr><td id="minimap">Q</td><td>Ky.</td><td>Q</td></tr>
+
+
+<tr><td id="minimap">R</td><td>La.</td><td>R</td></tr>
+
+
+<tr><td id="minimap">U</td><td>Maine</td><td>U</td></tr>
+
+
+<tr><td id="minimap">T</td><td>Md.</td><td>T</td></tr>
+
+
+<tr><td id="minimap">S</td><td>Mass.</td><td>S</td></tr>
+
+
+<tr><td id="minimap">V</td><td>Mich.</td><td>V</td></tr>
+
+
+<tr><td id="minimap">W</td><td>Minn.</td><td>W</td></tr>
+
+
+<tr><td id="minimap">Y</td><td>Miss.</td><td>Y</td></tr>
+
+
+<tr><td id="minimap">X</td><td>Mo.</td><td>X</td></tr>
+
+
+<tr><td id="minimap">Z</td><td>Mont.</td><td>Z</td></tr>
+
+
+<tr><td id="minimap">c</td><td>Neb.</td><td>c</td></tr>
+
+</table><table class="StateFace">
+
+
+<tr><td id="minimap">g</td><td>Nev.</td><td>g</td></tr>
+
+
+<tr><td id="minimap">d</td><td>N.H.</td><td>d</td></tr>
+
+
+<tr><td id="minimap">e</td><td>N.J.</td><td>e</td></tr>
+
+
+<tr><td id="minimap">f</td><td>N.M.</td><td>f</td></tr>
+
+
+<tr><td id="minimap">h</td><td>N.Y.</td><td>h</td></tr>
+
+
+<tr><td id="minimap">a</td><td>N.C.</td><td>a</td></tr>
+
+
+<tr><td id="minimap">b</td><td>N.D.</td><td>b</td></tr>
+
+
+<tr><td id="minimap">i</td><td>Ohio</td><td>i</td></tr>
+
+
+<tr><td id="minimap">j</td><td>Okla.</td><td>j</td></tr>
+
+
+<tr><td id="minimap">k</td><td>Ore.</td><td>k</td></tr>
+
+
+<tr><td id="minimap">l</td><td>Pa.</td><td>l</td></tr>
+
+
+<tr><td id="minimap">m</td><td>R.I.</td><td>m</td></tr>
+
+
+<tr><td id="minimap">n</td><td>S.C.</td><td>n</td></tr>
+
+
+<tr><td id="minimap">o</td><td>S.D.</td><td>o</td></tr>
+
+</table><table class="StateFace">
+
+
+<tr><td id="minimap">p</td><td>Tenn.</td><td>p</td></tr>
+
+
+<tr><td id="minimap">q</td><td>Texas</td><td>q</td></tr>
+
+
+<tr><td id="minimap">z</td><td>U.S.</td><td>z</td></tr>
+
+
+<tr><td id="minimap">r</td><td>Utah</td><td>r</td></tr>
+
+
+<tr><td id="minimap">t</td><td>Vt.</td><td>t</td></tr>
+
+
+<tr><td id="minimap">s</td><td>Va.</td><td>s</td></tr>
+
+
+<tr><td id="minimap">u</td><td>Wash.</td><td>u</td></tr>
+
+
+<tr><td id="minimap">w</td><td>W.Va.</td><td>w</td></tr>
+
+
+<tr><td id="minimap">v</td><td>Wis.</td><td>v</td></tr>
+
+
+<tr><td id="minimap">x</td><td>Wyo.</td><td>x</td></tr>
+
+
+</table></div>
+<div><h2>JSON (Postal, Key)</h2><pre>{
+  "VA": "s",
+  "ND": "b",
+  "NY": "h",
+  "AL": "B",
+  "RI": "m",
+  "NE": "c",
+  "MN": "W",
+  "MD": "T",
+  "HI": "K",
+  "DE": "H",
+  "CO": "F",
+  "WY": "x",
+  "MO": "X",
+  "ME": "U",
+  "IA": "L",
+  "OR": "k",
+  "OH": "i",
+  "KY": "Q",
+  "IL": "N",
+  "AZ": "D",
+  "TX": "q",
+  "TN": "p",
+  "NH": "d",
+  "GA": "J",
+  "SC": "n",
+  "IN": "O",
+  "ID": "M",
+  "SD": "o",
+  "PA": "l",
+  "OK": "j",
+  "NJ": "e",
+  "MS": "Y",
+  "MI": "V",
+  "FL": "I",
+  "CT": "G",
+  "AR": "C",
+  "WI": "v",
+  "MT": "Z",
+  "US": "z",
+  "VT": "t",
+  "NV": "g",
+  "KS": "P",
+  "CA": "E",
+  "WV": "w",
+  "UT": "r",
+  "NM": "f",
+  "MA": "S",
+  "DC": "y",
+  "WA": "u",
+  "NC": "a",
+  "LA": "R",
+  "AK": "A"
+}</pre></div>
+</body></html>

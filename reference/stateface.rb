@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'erb'
 require 'json'
+require 'bluecloth'
 
 STATES = [
   ["Alabama", "AL", "Ala.", 1, "B"],
@@ -71,7 +72,9 @@ table { font-size: 16px; width: 200px ; margin: 10px 0; float: left; margin-righ
 table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
 #minimap { font-family: 'StateFace-Regular'; text-align: center; vertical-align: top;}
 </style></head>
-<body><h1>StateFace Keyboard Map</h1>
+<body>
+<%= BlueCloth.new(File.read('../README.md')).to_html %>
+<h2>StateFace Keyboard Map</h2>
 <div><table class="StateFace">
 <% STATES.sort.each_with_index do |state,idx| %>
 <tr><td id="minimap"><%= state[4] %></td><td><%= state[2] %></td><td><%= state[4] %></td></tr>
