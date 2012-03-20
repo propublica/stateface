@@ -6,13 +6,13 @@ It's designed to be used at small sizes, and the shapes have been highly simplif
 
 At ProPublica we're using it in our [super PAC tracker](http://projects.propublica.org/pactrack).
 
-Download: [ZIP](http://propublica.github.com/stateface/pkg/state-face.zip) [tar.gz](http://propublica.github.com/stateface/pkg/state-face.tar.gz)
+Download: [ZIP](http://propublica.github.com/stateface/pkg/stateface.zip) [tar.gz](http://propublica.github.com/stateface/pkg/stateface.tar.gz) [Source Repo](http://github.com/propublica/stateface)
 
 ## How to Use
 
 The easiest way to us StateFace on the web is to use FontSquirrel's technique to serve StateFace in a reliably cross-platform way:
 
-1. In the `font/webfont` directory in the repo, find the following files and upload them to your webserver.
+1. In the `font/webfont` directory, find the following files and upload them to your webserver.
 
         stateface-regular-webfont.eot
         stateface-regular-webfont.woff
