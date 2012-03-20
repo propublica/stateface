@@ -24,7 +24,6 @@ h1, h2, h3 {
 div {
   clear: both;
   width: 600px;
-  height: 500px;
   margin-bottom: 30px;
 }
 
@@ -60,10 +59,28 @@ table.StateFace td {
 }
 
 #us {
+  display: inline-block;
+  width: 100px;
   font-family: 'StateFaceRegular';
   font-size: 80px;
   position: relative;
   top: 20px;
+}
+
+#us #ak, #us #hi {
+  position:absolute;
+}
+
+#us #hi {
+  font-size: 11px;
+  left: 23px;
+  bottom: 12px;
+}
+
+#us #ak {
+  font-size: 16px;
+  left: 1px;
+  bottom: 11px;
 }
 
 .minimap {
