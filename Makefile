@@ -10,4 +10,4 @@ publish:
 docs:
 	cd reference && ruby stateface.rb
 
-.PHONY: publish state-plan albers
+.PHONY: publish state-plan albers docs
