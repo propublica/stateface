@@ -50,7 +50,7 @@ state_planes = {
   "WV" => "EPSG:32050",
   "WI" => "EPSG:2859",
   "WY" => "EPSG:32055",
-  "DC" => "EPSG:3083"
+  "DC" => "EPSG:3785"
 }
 
 ROOT = File.expand_path(File.dirname(File.basename(__FILE__)))
