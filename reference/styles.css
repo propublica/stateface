@@ -21,6 +21,10 @@ h1, h2, h3 {
   margin-left: -5px;
 }
 
+h1 {
+  font-weight: normal;
+}
+
 div {
   clear: both;
   width: 600px;
@@ -59,17 +63,19 @@ table.StateFace td {
 }
 
 #us {
-  display: inline;
+  display: inline-block;
   width: 100px;
   font-family: 'StateFaceRegular';
   font-size: 80px;
-  height: 76px;
+  height: 74px;
   position: relative;
   top: 20px;
+  margin: 0px;
 }
 
 #us #ak, #us #hi {
   position:absolute;
+  margin: 0px;
 }
 
 #us #hi {
