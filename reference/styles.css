@@ -28,6 +28,9 @@ div {
   margin-bottom: 30px;
 }
 
+a { color: black; }
+a:hover { text-decoration: none; }
+
 td#minimap {
   width: 15px;
 }
