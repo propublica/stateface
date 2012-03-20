@@ -4,13 +4,14 @@ state-plane albers:
 publish:
 	git checkout gh-pages
 	git merge master
-	git push
+	git push origin gh-pages
 	git checkout master
 
 docs:
 	cd reference && ruby stateface.rb
 
 pkg:
+	rm pkg/*
 	zip -r pkg/stateface.zip font
 	tar -cvzf pkg/stateface.tar.gz font
 
