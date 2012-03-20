@@ -4,6 +4,8 @@ A font you can use in your web apps when you want tiny state shapes as a design 
 
 It's designed to be used at small sizes, and the shapes have been highly simplified to make for a really small font. All 50 states plus D.C. and a wee continental U.S. map fit in about 22k, and they look great on Retina displays.
 
+At ProPublica we're using it in our [super PAC tracker](http://projects.propublica.org/pactrack).
+
 ## How to Use
 
 We use FontSquirrel's technique to serve StateFace in a reliably cross-platform way. Here's how:
