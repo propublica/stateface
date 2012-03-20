@@ -45,12 +45,33 @@ Each state is projected using State Plane, and the U.S. (lowercase z) is project
 
 ## Forking and Contributing
 
+The [Glyphs Mini](http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12) `.glyphs` file is [included in the repo](http://propublica.github.com/stateface/font/stateface.glyphs) if any type (especially hinting) experts want to try their hand at tuning it.
+
+FontSquirrel's [FontFace Generator](http://www.fontsquirrel.com/fontface/generator) generated the files in `font/webfont` To generate the files in webfont.
+
 We projected `.eps` files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Running `make state-plane` or `make albers` will re-make the EPS files if you need to do that for some reason.
 
-We used [Glyphs Mini](http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12) to assemble the font and FontSquirrel's [FontFace Generator](http://www.fontsquirrel.com/fontface/generator) to auto-hint and generate EOT and WOFF files.
-
-The raw `.glyphs` file is [included in the repo](http://propublica.github.com/stateface/font/stateface.glyphs) if any type (especially hinting) experts want to try their hand at tuning it.
 
 ## License
 
-StateFace is licensed under an MIT license. See the [license file](http://propublica.github.com/stateface/LICENSE.txt) for details.
+    Copyright (c) 2012, ProPublica
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is furnished
+    to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+    IN THE SOFTWARE.
+
+
