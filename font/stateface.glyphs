@@ -9593,5 +9593,5 @@ kerning = {
 manufacturer = USGS;
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 30;
+versionMinor = 100;
 }
