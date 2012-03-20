@@ -8,8 +8,7 @@ At ProPublica we're using it in our [super PAC tracker](http://projects.propubli
 
 ## How to Use
 
-We use FontSquirrel's technique to serve StateFace in a reliably cross-platform way. Here's how:
-
+The easiest way to us StateFace on the web is to use FontSquirrel's technique to serve StateFace in a reliably cross-platform way:
 
 1. In the `font/webfont` directory in the repo, find the following files and upload them to your webserver.
 
@@ -36,10 +35,13 @@ We use FontSquirrel's technique to serve StateFace in a reliably cross-platform 
 3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](reference/stateface.json) for programmatic access.
 
 If you just want the OpenType font to use in a print layout you can [download it here](font/StateFace-Regular.otf).
+## StateFace Keyboard Map
+
+<%= table %>
 
 ## Projection Info
 
-Each state is projected using State Plane, and the U.S. (lowercase z) is projected using [Texas Centric Albers Equal Area](http://spatialreference.org/ref/epsg/3083/). The outlines are from [Natural Earth data](http://www.naturalearthdata.com/). See Natural Earth data's [terms of use](http://www.naturalearthdata.com/about/terms-of-use/) for details.
+Each state is projected using State Plane, and the U.S. (lowercase z) is projected using [Texas Centric Albers Equal Area](http://spatialreference.org/ref/epsg/3083/). The source [shapefiles](https://github.com/propublica/stateface/tree/master/tools/us-states) are adapted from [Natural Earth data](http://www.naturalearthdata.com/).
 
 ## Forking and Contributing
 

@@ -62,15 +62,20 @@ state_characters = {}
 STATES.each { |s| state_characters[s[1]] = s[4] }
 
 template = %q{
+<!doctype html>
 <html>
-<head>
-  <title>StateFace</title>
-  <link rel="stylesheet" href="reference/styles.css" type="text/css">
-</head>
-<body>
+  <head>
+    <title>StateFace</title>
+    <link rel="stylesheet" href="reference/styles.css" type="text/css">
+  </head>
+  <body>
   <%= RDiscount.new(File.read '../README.md').to_html %>
-  <h2>StateFace Keyboard Map</h2>
-  <div>
+  </body>
+</html>
+}
+
+table = %q{
+  <div id="font-map">
     <% STATES.sort.each_slice(18) do |group| %>
       <table class="StateFace">
         <% group.each do |state| %>
@@ -83,12 +88,10 @@ template = %q{
       </table>
     <% end %>
   </div>
-  </body>
-</html>
 }
 
 File.open('../index.html', 'w') do |f|
-  f.write ERB.new(template).result(binding)
+  f.write ERB.new(template).result(binding).gsub('<p>&lt;%= table %></p>', ERB.new(table).result)
 end
 
 File.open('stateface.json', 'w') do |f|

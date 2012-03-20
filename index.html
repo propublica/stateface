@@ -1,10 +1,11 @@
 
+<!doctype html>
 <html>
-<head>
-  <title>StateFace</title>
-  <link rel="stylesheet" href="reference/styles.css" type="text/css">
-</head>
-<body>
+  <head>
+    <title>StateFace</title>
+    <link rel="stylesheet" href="reference/styles.css" type="text/css">
+  </head>
+  <body>
   <h1>StateFace <span id="us">z</span></h1>
 
 <p>A font you can use in your web apps when you want tiny state shapes as a design element.</p>
@@ -15,7 +16,7 @@
 
 <h2>How to Use</h2>
 
-<p>We use FontSquirrel's technique to serve StateFace in a reliably cross-platform way. Here's how:</p>
+<p>The easiest way to us StateFace on the web is to use FontSquirrel's technique to serve StateFace in a reliably cross-platform way:</p>
 
 <ol>
 <li><p>In the <code>font/webfont</code> directory in the repo, find the following files and upload them to your webserver.</p>
@@ -46,24 +47,10 @@
 
 <p>If you just want the OpenType font to use in a print layout you can <a href="font/StateFace-Regular.otf">download it here</a>.</p>
 
-<h2>Projection Info</h2>
+<h2>StateFace Keyboard Map</h2>
 
-<p>Each state is projected using State Plane, and the U.S. (lowercase z) is projected using <a href="http://spatialreference.org/ref/epsg/3083/">Texas Centric Albers Equal Area</a>. The outlines are from <a href="http://www.naturalearthdata.com/">Natural Earth data</a>. See Natural Earth data's <a href="http://www.naturalearthdata.com/about/terms-of-use/">terms of use</a> for details.</p>
 
-<h2>How We Did It</h2>
-
-<p>We projected <code>.eps</code> files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Running <code>make state-plane</code> or <code>make albers</code> will re-make the EPS files if you need to do that for some reason.</p>
-
-<p>We used <a href="http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12">Glyphs Mini</a> to assemble the font and FontSquirrel's <a href="http://www.fontsquirrel.com/fontface/generator">FontFace Generator</a> to auto-hint and generate EOT and WOFF files.</p>
-
-<p>The raw <code>.glyphs</code> file is <a href="http://propublica.github.com/stateface/font/stateface.glyphs">included in the repo</a> if any type (especially hinting) experts want to try their hand at tuning it.</p>
-
-<h2>License</h2>
-
-<p>StateFace is licensed under an MIT license. See the <a href="http://propublica.github.com/stateface/LICENSE.txt">license file</a> for details.</p>
-
-  <h2>StateFace Keyboard Map</h2>
-  <div>
+  <div id="font-map">
     
       <table class="StateFace">
         
@@ -390,5 +377,23 @@
       </table>
     
   </div>
+
+
+<h2>Projection Info</h2>
+
+<p>Each state is projected using State Plane, and the U.S. (lowercase z) is projected using <a href="http://spatialreference.org/ref/epsg/3083/">Texas Centric Albers Equal Area</a>. The source <a href="https://github.com/propublica/stateface/tree/master/tools/us-states">shapefiles</a> are adapted from <a href="http://www.naturalearthdata.com/">Natural Earth data</a>.</p>
+
+<h2>Forking and Contributing</h2>
+
+<p>We projected <code>.eps</code> files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Running <code>make state-plane</code> or <code>make albers</code> will re-make the EPS files if you need to do that for some reason.</p>
+
+<p>We used <a href="http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12">Glyphs Mini</a> to assemble the font and FontSquirrel's <a href="http://www.fontsquirrel.com/fontface/generator">FontFace Generator</a> to auto-hint and generate EOT and WOFF files.</p>
+
+<p>The raw <code>.glyphs</code> file is <a href="http://propublica.github.com/stateface/font/stateface.glyphs">included in the repo</a> if any type (especially hinting) experts want to try their hand at tuning it.</p>
+
+<h2>License</h2>
+
+<p>StateFace is licensed under an MIT license. See the <a href="http://propublica.github.com/stateface/LICENSE.txt">license file</a> for details.</p>
+
   </body>
 </html>
