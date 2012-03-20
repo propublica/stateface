@@ -71,7 +71,7 @@ template = %q{
     <link rel="stylesheet" href="reference/styles.css" type="text/css">
   </head>
   <body>
-  <%= RDiscount.new(File.read '../README.md').to_html %>
+  <%= RDiscount.new(File.read './reference.mdown').to_html %>
   </body>
 </html>
 }
