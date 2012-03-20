@@ -1,4 +1,4 @@
-# StateFace <span id="us">z</span>
+# <span id="us">z</span> StateFace
 
 A font you can use in your web apps when you want tiny state shapes as a design element.
 

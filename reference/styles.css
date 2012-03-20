@@ -35,6 +35,12 @@ td#minimap {
   width: 15px;
 }
 
+tr:hover td {
+  background-color:#900;
+  color:white;
+  cursor: pointer;
+}
+
 div#font-map {
   overflow: hidden;
   height: 1%;
@@ -45,6 +51,7 @@ table {
   width: 190px;
   float: left;
   margin-right: 10px;
+  border-collapse:collapse;
 }
 
 table.StateFace td {
@@ -56,7 +63,7 @@ table.StateFace td {
   font-family: 'StateFaceRegular';
   font-size: 80px;
   position: relative;
-  top: 26px;
+  top: 20px;
 }
 
 .minimap {
