@@ -33,9 +33,9 @@ We use FontSquirrel's technique to serve StateFace in a reliably cross-platform 
             font-style: normal;
         }
 
-3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](http://propublica.github.com/stateface/reference/stateface.json) for programmatic access.
+3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](reference/stateface.json) for programmatic access.
 
-If you just want the OpenType font to use in a print layout you can [download it here](http://propublica.github.com/stateface/font/StateFace-Regular.otf).
+If you just want the OpenType font to use in a print layout you can [download it here](font/StateFace-Regular.otf).
 
 ## Projection Info
 
