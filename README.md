@@ -6,7 +6,7 @@ It's designed to be used at small sizes, and the shapes have been highly simplif
 
 At ProPublica we're using it in our [super PAC tracker](http://projects.propublica.org/pactrack).
 
-Download: [ZIP](http://propublica.github.com/stateface/pkg/stateface.zip) [tar.gz](http://propublica.github.com/stateface/pkg/stateface.tar.gz) [Source Repo](http://github.com/propublica/stateface)
+Download: [ZIP](http://propublica.github.com/stateface/pkg/stateface.zip) | [tar.gz](http://propublica.github.com/stateface/pkg/stateface.tar.gz) | [Source Repo](http://github.com/propublica/stateface)
 
 ## How to Use
 
