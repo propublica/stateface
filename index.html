@@ -25,25 +25,23 @@ table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
 
 <p>A font you can use in your web apps when you want tiny state shapes as a design element. </p>
 
+<p>It&#39;s designed to be used at small sizes, and the shapes have been highly simplified to make for a really small font. All 50 states plus D.C. and a wee continental U.S. map fit in about 22k, and they look great on Retina displays.</p>
+
 <h2>How to Use</h2>
 
 <p>We use FontSquirrel&#39;s technique to serve StateFace in a reliably cross-platform way. Here&#39;s how:</p>
 
 <ol>
-<li>In the <code>font/webfont</code> directory in the repo, find the following files and upload them to your webserver:</li>
-</ol>
+<li><p>In the <code>font/webfont</code> directory in the repo, find the following files and upload them to your webserver. </p>
 
-<ul>
-<li>stateface-regular-webfont.eot</li>
-<li>stateface-regular-webfont.woff</li>
-<li>stateface-regular-webfont.ttf</li>
-<li>stateface-regular-webfont.svg</li>
-</ul>
+<pre><code>stateface-regular-webfont.eot
+stateface-regular-webfont.woff
+stateface-regular-webfont.ttf
+stateface-regular-webfont.svg
+</code></pre>
 
-<p>Note: Firefox gets a bit testy about cross-origin assets so it&#39;s really best to serve them from your actual webserver.</p>
-
-<ol>
-<li><p>Include this chunk of CSS in a stylesheet that&#39;s called from your web page.</p>
+<p>Note: Firefox gets a bit testy about cross-domain-origin assets so it&#39;s really best to serve them from your actual webserver.</p></li>
+<li><p>Include this chunk of CSS in a stylesheet that&#39;s called from your web page. Use the correct paths, of course.</p>
 
 <pre><code>@font-face {
     font-family: &#39;StateFaceRegular&#39;;
@@ -56,10 +54,10 @@ table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
     font-style: normal;
 }
 </code></pre></li>
-<li><p>Now, any text that has or inherits the font-family &#39;StateFaceRegular&#39; style will appear as a state shape. See the character reference below to know which letter will draw which state, or download the handy json file for programmatic access.</p></li>
+<li><p>Now, any text that has or inherits the font-family &#39;StateFaceRegular&#39; style will appear as a state shape. See the character reference below to know which letter will draw which state, or <a href="reference/stateface.json">download the handy json file</a> for programmatic access.</p></li>
 </ol>
 
-<p>If you just want the OpenType font you can <a href="tk">download it here</a>.</p>
+<p>If you just want the OpenType font to use in a print layout you can <a href="font/StateFace-Regular.otf">download it here</a>.</p>
 
 <h2>Projection Info</h2>
 
@@ -67,11 +65,15 @@ table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
 
 <h2>How We Did It</h2>
 
-<p>We projected <code>.eps</code> files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Run <code>make blah</code> will re-make the EPS files if you need to do that for some reason.</p>
+<p>We projected <code>.eps</code> files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Running <code>make state-plane</code> or <code>make albers</code> will re-make the EPS files if you need to do that for some reason.</p>
 
 <p>We used <a href="http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12">Glyphs Mini</a> to assemble the font and FontSquirrel&#39;s <a href="http://www.fontsquirrel.com/fontface/generator">FontFace Generator</a> to auto-hint and generate EOT and WOFF files.</p>
 
-<p>The raw <code>.glyphs</code> file is included in the repo if any hinting experts want to try their hand at tuning it.</p>
+<p>The raw <code>.glyphs</code> file is <a href="font/stateface.glyphs">included in the repo</a> if any type (especially hinting) experts want to try their hand at tuning it.</p>
+
+<h2>License</h2>
+
+<p>StateFace is licensed under an MIT license. See the <a href="LICENSE.txt">license file</a> for details.</p>
 
 <h2>StateFace Keyboard Map</h2>
 <div><table class="StateFace">
@@ -239,58 +241,4 @@ table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
 
 
 </table></div>
-<div><h2>JSON (Postal, Key)</h2><pre>{
-  "VA": "s",
-  "ND": "b",
-  "NY": "h",
-  "AL": "B",
-  "RI": "m",
-  "NE": "c",
-  "MN": "W",
-  "MD": "T",
-  "HI": "K",
-  "DE": "H",
-  "CO": "F",
-  "WY": "x",
-  "MO": "X",
-  "ME": "U",
-  "IA": "L",
-  "OR": "k",
-  "OH": "i",
-  "KY": "Q",
-  "IL": "N",
-  "AZ": "D",
-  "TX": "q",
-  "TN": "p",
-  "NH": "d",
-  "GA": "J",
-  "SC": "n",
-  "IN": "O",
-  "ID": "M",
-  "SD": "o",
-  "PA": "l",
-  "OK": "j",
-  "NJ": "e",
-  "MS": "Y",
-  "MI": "V",
-  "FL": "I",
-  "CT": "G",
-  "AR": "C",
-  "WI": "v",
-  "MT": "Z",
-  "US": "z",
-  "VT": "t",
-  "NV": "g",
-  "KS": "P",
-  "CA": "E",
-  "WV": "w",
-  "UT": "r",
-  "NM": "f",
-  "MA": "S",
-  "DC": "y",
-  "WA": "u",
-  "NC": "a",
-  "LA": "R",
-  "AK": "A"
-}</pre></div>
 </body></html>

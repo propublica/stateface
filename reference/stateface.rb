@@ -94,7 +94,6 @@ table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
 <% end %>
 <% end %>
 </table></div>
-<div><h2>JSON (Postal, Key)</h2><pre><%= JSON.pretty_generate(state_characters) %></pre></div>
 </body></html>
 }.gsub(/^  /, '')
 
