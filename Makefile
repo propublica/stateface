@@ -7,4 +7,7 @@ publish:
 	git push
 	git checkout master
 
+docs:
+	cd reference && ruby stateface.rb
+
 .PHONY: publish state-plan albers

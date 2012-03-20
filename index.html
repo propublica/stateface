@@ -1,34 +1,78 @@
 
 <html>
-<head><style>
-@font-face { font-family: StateFace-Regular; src: url('../font/StateFace-Regular.otf'); } 
+<head><title>StateFace</title>
+<style>
+@font-face {
+  font-family: 'StateFaceRegular';
+  src: url('font/webfont/stateface-regular-webfont.eot');
+  src: url('font/webfont/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/webfont/stateface-regular-webfont.woff') format('woff'),
+       url('font/webfont/stateface-regular-webfont.ttf') format('truetype'),
+       url('font/webfont/stateface-regular-webfont.svg#StateFaceRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body { font-size: 16px; font-family: Helvetica, Arial, sans-serif; width: 960px; margin: 10px auto; }
 div { clear:both; height: 500px; margin-bottom: 30px;}
 td#minimap { width: 15px;}
 table { font-size: 16px; width: 200px ; margin: 10px 0; float: left; margin-right: 40px; }
 table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
-#minimap { font-family: 'StateFace-Regular'; text-align: center; vertical-align: top;}
-</style></head>
+#minimap { font-family: 'StateFaceRegular'; text-align: center; vertical-align: top;}
+</style>
+</head>
 <body>
 <h1>StateFace</h1>
 
-<p>A font you can use in your web apps when you want tiny state shapes as a design element.</p>
+<p>A font you can use in your web apps when you want tiny state shapes as a design element. </p>
 
 <h2>How to Use</h2>
+
+<p>We use FontSquirrel&#39;s technique to serve StateFace in a reliably cross-platform way. Here&#39;s how:</p>
+
+<ol>
+<li>In the <code>font/webfont</code> directory in the repo, find the following files and upload them to your webserver:</li>
+</ol>
+
+<ul>
+<li>stateface-regular-webfont.eot</li>
+<li>stateface-regular-webfont.woff</li>
+<li>stateface-regular-webfont.ttf</li>
+<li>stateface-regular-webfont.svg</li>
+</ul>
+
+<p>Note: Firefox gets a bit testy about cross-origin assets so it&#39;s really best to serve them from your actual webserver.</p>
+
+<ol>
+<li><p>Include this chunk of CSS in a stylesheet that&#39;s called from your web page.</p>
+
+<pre><code>@font-face {
+    font-family: &#39;StateFaceRegular&#39;;
+    src: url(&#39;stateface-regular-webfont.eot&#39;);
+    src: url(&#39;stateface-regular-webfont.eot?#iefix&#39;) format(&#39;embedded-opentype&#39;),
+         url(&#39;stateface-regular-webfont.woff&#39;) format(&#39;woff&#39;),
+         url(&#39;stateface-regular-webfont.ttf&#39;) format(&#39;truetype&#39;),
+         url(&#39;stateface-regular-webfont.svg#StateFaceRegular&#39;) format(&#39;svg&#39;);
+    font-weight: normal;
+    font-style: normal;
+}
+</code></pre></li>
+<li><p>Now, any text that has or inherits the font-family &#39;StateFaceRegular&#39; style will appear as a state shape. See the character reference below to know which letter will draw which state, or download the handy json file for programmatic access.</p></li>
+</ol>
 
 <p>If you just want the OpenType font you can <a href="tk">download it here</a>.</p>
 
 <h2>Projection Info</h2>
 
-<p>Each state is projected using State Plane, and the U.S. (lowercase z) is projected using <a href="http://spatialreference.org/ref/epsg/3083/">Texas Centric Albers Equal Area</a>. The outlines are from <a href="http://www.naturalearthdata.com/">Natural Earth data</a>. See Natural Earth data's <a href="http://www.naturalearthdata.com/about/terms-of-use/">terms of use</a> for details.</p>
+<p>Each state is projected using State Plane, and the U.S. (lowercase z) is projected using <a href="http://spatialreference.org/ref/epsg/3083/">Texas Centric Albers Equal Area</a>. The outlines are from <a href="http://www.naturalearthdata.com/">Natural Earth data</a>. See Natural Earth data&#39;s <a href="http://www.naturalearthdata.com/about/terms-of-use/">terms of use</a> for details.</p>
 
 <h2>How We Did It</h2>
 
 <p>We projected <code>.eps</code> files for each state and for the U.S. using TK. The script that generates the files is in the tools directory. Run <code>make blah</code> will re-make the EPS files if you need to do that for some reason.</p>
 
-<p>We used <a href="http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12">Glyphs Mini</a> to assemble the font and FontSquirrel's <a href="http://www.fontsquirrel.com/fontface/generator">FontFace Generator</a> to auto-hint and generate EOT and WOFF files.</p>
+<p>We used <a href="http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12">Glyphs Mini</a> to assemble the font and FontSquirrel&#39;s <a href="http://www.fontsquirrel.com/fontface/generator">FontFace Generator</a> to auto-hint and generate EOT and WOFF files.</p>
 
 <p>The raw <code>.glyphs</code> file is included in the repo if any hinting experts want to try their hand at tuning it.</p>
+
 <h2>StateFace Keyboard Map</h2>
 <div><table class="StateFace">
 
