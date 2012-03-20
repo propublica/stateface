@@ -31,9 +31,9 @@ We use FontSquirrel's technique to serve StateFace in a reliably cross-platform 
             font-style: normal;
         }
     
-3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](reference/stateface.json) for programmatic access.
+3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](http://propublica.github.com/stateface/reference/stateface.json) for programmatic access.
 
-If you just want the OpenType font to use in a print layout you can [download it here](font/StateFace-Regular.otf).
+If you just want the OpenType font to use in a print layout you can [download it here](http://propublica.github.com/stateface/font/StateFace-Regular.otf).
 
 ## Projection Info
 
@@ -45,8 +45,8 @@ We projected `.eps` files for each state and for the U.S. using TK. The script t
 
 We used [Glyphs Mini](http://itunes.apple.com/us/app/glyphs-mini/id469036911?mt=12) to assemble the font and FontSquirrel's [FontFace Generator](http://www.fontsquirrel.com/fontface/generator) to auto-hint and generate EOT and WOFF files.
 
-The raw `.glyphs` file is [included in the repo](font/stateface.glyphs) if any type (especially hinting) experts want to try their hand at tuning it.
+The raw `.glyphs` file is [included in the repo](http://propublica.github.com/stateface/font/stateface.glyphs) if any type (especially hinting) experts want to try their hand at tuning it.
 
 ## License
 
-StateFace is licensed under an MIT license. See the [license file](LICENSE.txt) for details.
+StateFace is licensed under an MIT license. See the [license file](http://propublica.github.com/stateface/LICENSE.txt) for details.
