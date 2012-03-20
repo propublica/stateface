@@ -1,9 +1,6 @@
 {
-DisplayStrings = (
-e
-);
 copyright = "Copyright \U00A9 2012 ProPublica. See LICENSE file for redistribution details.";
-date = "2012-03-19 22:01:43 +0000";
+date = "2012-03-20 16:44:32 +0000";
 designer = ProPublica;
 designerURL = "http://www.github.com/propublica/stateface/";
 familyName = "StateFace";
@@ -14751,5 +14748,5 @@ kerning = {
 manufacturer = USGS;
 unitsPerEm = 1000;
 versionMajor = 1;
-versionMinor = 25;
+versionMinor = 30;
 }
