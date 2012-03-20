@@ -44,7 +44,7 @@ If you just want the OpenType font to use in a print layout you can [download it
 
 ## Projection Info
 
-Each state is projected using State Plane, and the U.S. (lowercase z) is projected using [Texas Centric Albers Equal Area](http://spatialreference.org/ref/epsg/3083/). The source [shapefiles](https://github.com/propublica/stateface/tree/master/tools/us-states) are adapted from [Natural Earth data](http://www.naturalearthdata.com/).
+Each state is projected using a relevant state plane projection, and the U.S. (lowercase z) is projected using [Texas Centric Albers Equal Area](http://spatialreference.org/ref/epsg/3083/). The source [shapefiles](https://github.com/propublica/stateface/tree/master/tools/us-states) are adapted from [Natural Earth data](http://www.naturalearthdata.com/).
 
 ## Forking and Contributing
 
