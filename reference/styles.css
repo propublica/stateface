@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'StateFaceRegular';
+  src: url('../font/webfont/stateface-regular-webfont.eot');
+  src: url('../font/webfont/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/webfont/stateface-regular-webfont.woff') format('woff'),
+       url('../font/webfont/stateface-regular-webfont.ttf') format('truetype'),
+       url('../font/webfont/stateface-regular-webfont.svg#StateFaceRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Helvetica Nueue", Helvetica, sans-serif;
+  width: 600px;
+  margin: 10px auto;
+}
+
+div {
+  clear: both;
+  width: 600px;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+td#minimap {
+  width: 15px;
+}
+
+div#font-table {
+  width: 960px;
+  position: relative;
+  right: 150px;
+}
+
+table {
+  font-size: 16px;
+  width: 200px;
+  margin: 10px 0;
+  float: left;
+  margin-right: 30px;
+}
+
+table.StateFace td {
+  border-bottom: 1px silver solid;
+  padding: 5px;
+}
+
+#us {
+  font-family: 'StateFaceRegular';
+  font-size: 80px;
+  position: relative;
+  top: 26px;
+}
+
+.minimap {
+  font-family: 'StateFaceRegular';
+  text-align: center;
+  vertical-align: top;
+}

@@ -1,6 +1,6 @@
-# StateFace
+# StateFace <span id="us">z</span>
 
-A font you can use in your web apps when you want tiny state shapes as a design element. 
+A font you can use in your web apps when you want tiny state shapes as a design element.
 
 It's designed to be used at small sizes, and the shapes have been highly simplified to make for a really small font. All 50 states plus D.C. and a wee continental U.S. map fit in about 22k, and they look great on Retina displays.
 
@@ -11,7 +11,7 @@ At ProPublica we're using it in our [super PAC tracker](http://projects.propubli
 We use FontSquirrel's technique to serve StateFace in a reliably cross-platform way. Here's how:
 
 
-1. In the `font/webfont` directory in the repo, find the following files and upload them to your webserver. 
+1. In the `font/webfont` directory in the repo, find the following files and upload them to your webserver.
 
         stateface-regular-webfont.eot
         stateface-regular-webfont.woff
@@ -32,7 +32,7 @@ We use FontSquirrel's technique to serve StateFace in a reliably cross-platform 
             font-weight: normal;
             font-style: normal;
         }
-    
+
 3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](http://propublica.github.com/stateface/reference/stateface.json) for programmatic access.
 
 If you just want the OpenType font to use in a print layout you can [download it here](http://propublica.github.com/stateface/font/StateFace-Regular.otf).

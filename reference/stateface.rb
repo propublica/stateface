@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'erb'
 require 'json'
-require 'tilt'
+require 'rdiscount'
 
 STATES = [
   ["Alabama", "AL", "Ala.", 1, "B"],
@@ -63,39 +63,30 @@ STATES.each { |s| state_characters[s[1]] = s[4] }
 
 template = %q{
 <html>
-<head><title>StateFace</title>
-<style>
-@font-face {
-    font-family: 'StateFaceRegular';
-    src: url('font/webfont/stateface-regular-webfont.eot');
-    src: url('font/webfont/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/webfont/stateface-regular-webfont.woff') format('woff'),
-         url('font/webfont/stateface-regular-webfont.ttf') format('truetype'),
-         url('font/webfont/stateface-regular-webfont.svg#StateFaceRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-body { font-size: 16px; font-family: Helvetica, Arial, sans-serif; width: 960px; margin: 10px auto; }
-div { clear:both; height: 500px; margin-bottom: 30px;}
-td#minimap { width: 15px;}
-table { font-size: 16px; width: 200px ; margin: 10px 0; float: left; margin-right: 40px; }
-table.StateFace td { border-bottom: 1px silver solid; padding: 5px; }
-#minimap { font-family: 'StateFaceRegular'; text-align: center; vertical-align: top;}
-</style>
+<head>
+  <title>StateFace</title>
+  <link rel="stylesheet" href="reference/styles.css" type="text/css">
 </head>
 <body>
-<%= Tilt.new('../README.md').render %>
-<h2>StateFace Keyboard Map</h2>
-<div><table class="StateFace">
-<% STATES.sort.each_with_index do |state,idx| %>
-<tr><td id="minimap"><%= state[4] %></td><td><%= state[2] %></td><td><%= state[4] %></td></tr>
-<% if [13,27,41].include?(idx) %>
-</table><table class="StateFace">
-<% end %>
-<% end %>
-</table></div>
-</body></html>
-}.gsub(/^  /, '')
+  <%= RDiscount.new(File.read '../README.md').to_html %>
+  <h2>StateFace Keyboard Map</h2>
+  <div id="font-table">
+    <table class="StateFace">
+      <% STATES.sort.each_with_index do |state,idx| %>
+        <tr>
+          <td class="minimap"><%= state[4] %></td>
+          <td><%= state[2] %></td>
+          <td><%= state[4] %></td>
+        </tr>
+        <% if [13,27,41].include?(idx) %>
+          </table><table class="StateFace">
+        <% end %>
+      <% end %>
+    </table>
+  </div>
+  </body>
+</html>
+}
 
 File.open('../index.html', 'w') do |f|
   f.write ERB.new(template).result
