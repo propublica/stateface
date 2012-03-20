@@ -77,4 +77,4 @@ Running `make state-plane` or `make albers` will make a fresh copy.
     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
     IN THE SOFTWARE.
 
-
+_StateFace is a project of ProPublica._
