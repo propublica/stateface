@@ -1,0 +1,227 @@
+.state:before {
+    font-family: StateFaceRegular;
+    margin-right: 5px;
+}
+
+.state-replace {
+    text-indent: -999em;
+    display: inline-block;
+    position: relative;
+    min-width: 1em;
+}
+
+.state-replace:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: 0;
+}
+
+.state-ak:before {
+    content: "A";
+}
+
+.state-al:before {
+    content: "B";
+}
+
+.state-ar:before {
+    content: "C";
+}
+
+.state-az:before {
+    content: "D";
+}
+
+.state-ca:before {
+    content: "E";
+}
+
+.state-co:before {
+    content: "F";
+}
+
+.state-ct:before {
+    content: "G";
+}
+
+.state-dc:before {
+    content: "y";
+}
+
+.state-de:before {
+    content: "H";
+}
+
+.state-fl:before {
+    content: "I";
+}
+
+.state-ga:before {
+    content: "J";
+}
+
+.state-hi:before {
+    content: "K";
+}
+
+.state-ia:before {
+    content: "L";
+}
+
+.state-id:before {
+    content: "M";
+}
+
+.state-il:before {
+    content: "N";
+}
+
+.state-in:before {
+    content: "O";
+}
+
+.state-ks:before {
+    content: "P";
+}
+
+.state-ky:before {
+    content: "Q";
+}
+
+.state-la:before {
+    content: "R";
+}
+
+.state-ma:before {
+    content: "S";
+}
+
+.state-md:before {
+    content: "T";
+}
+
+.state-me:before {
+    content: "U";
+}
+
+.state-mi:before {
+    content: "V";
+}
+
+.state-mn:before {
+    content: "W";
+}
+
+.state-mo:before {
+    content: "X";
+}
+
+.state-ms:before {
+    content: "Y";
+}
+
+.state-mt:before {
+    content: "Z";
+}
+
+.state-nc:before {
+    content: "a";
+}
+
+.state-nd:before {
+    content: "b";
+}
+
+.state-ne:before {
+    content: "c";
+}
+
+.state-nh:before {
+    content: "d";
+}
+
+.state-nj:before {
+    content: "e";
+}
+
+.state-nm:before {
+    content: "f";
+}
+
+.state-nv:before {
+    content: "g";
+}
+
+.state-ny:before {
+    content: "h";
+}
+
+.state-oh:before {
+    content: "i";
+}
+
+.state-ok:before {
+    content: "j";
+}
+
+.state-or:before {
+    content: "k";
+}
+
+.state-pa:before {
+    content: "l";
+}
+
+.state-ri:before {
+    content: "m";
+}
+
+.state-sc:before {
+    content: "n";
+}
+
+.state-sd:before {
+    content: "o";
+}
+
+.state-tn:before {
+    content: "p";
+}
+
+.state-tx:before {
+    content: "q";
+}
+
+.state-us:before {
+    content: "z";
+}
+
+.state-ut:before {
+    content: "r";
+}
+
+.state-va:before {
+    content: "s";
+}
+
+.state-vt:before {
+    content: "t";
+}
+
+.state-wa:before {
+    content: "u";
+}
+
+.state-wi:before {
+    content: "v";
+}
+
+.state-wv:before {
+    content: "w";
+}
+
+.state-wy:before {
+    content: "x";
+}
+
