@@ -44,13 +44,13 @@ If you just want the OpenType font to use in a print layout you can [download it
 
 [Paul Smith](https://github.com/paulsmith) put together a [stylesheet](reference/stateface.css) that allows for css-based replacement (or prepending) of text. For example, for replacement you'd use:
 
-        <span class="stateface stateface-replace stateface-{abbrev}">{stateface}</span>
+        <span class="stateface stateface-replace stateface-{abbrev}">{statename}</span>
 
 Which could produce <span class="stateface stateface-replace stateface-md">Maryland</span>
 
 If you only want to prepend the state shape to the span you can do:
 
-        <span class="stateface stateface-{abbrev}">{stateface}</span>
+        <span class="stateface stateface-{abbrev}">{statename}</span>
 
 So you can write sentences like: I was born in <span class="stateface stateface-co">Colorado</span> and then moved to <span class="stateface stateface-fl">Florida</span>, and graduated from high school in
 <span class="stateface stateface-ca">California</span>.
