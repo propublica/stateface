@@ -13,7 +13,7 @@ try:
 except ImportError:
     import simplejson as json
 
-CLASS_PREFIX = 'state'
+CLASS_PREFIX = 'stateface'
 
 CSS = Template("""\
 .$prefix:before {
@@ -44,7 +44,7 @@ STATE_RULE = Template("""\
 
 def make_state_rules(state_mapping):
     rules = []
-    
+
     for abbrev, code in sorted(state_mapping.iteritems()):
         rule = Template(STATE_RULE).substitute(
             abbrev=abbrev.lower(),

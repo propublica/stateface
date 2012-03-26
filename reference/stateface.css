@@ -1,227 +1,227 @@
-.state:before {
+.stateface:before {
     font-family: StateFaceRegular;
     margin-right: 5px;
 }
 
-.state-replace {
+.stateface-replace {
     text-indent: -999em;
     display: inline-block;
     position: relative;
     min-width: 1em;
 }
 
-.state-replace:before {
+.stateface-replace:before {
     position: absolute;
     left: 0;
     top: 0;
     text-indent: 0;
 }
 
-.state-ak:before {
+.stateface-ak:before {
     content: "A";
 }
 
-.state-al:before {
+.stateface-al:before {
     content: "B";
 }
 
-.state-ar:before {
+.stateface-ar:before {
     content: "C";
 }
 
-.state-az:before {
+.stateface-az:before {
     content: "D";
 }
 
-.state-ca:before {
+.stateface-ca:before {
     content: "E";
 }
 
-.state-co:before {
+.stateface-co:before {
     content: "F";
 }
 
-.state-ct:before {
+.stateface-ct:before {
     content: "G";
 }
 
-.state-dc:before {
+.stateface-dc:before {
     content: "y";
 }
 
-.state-de:before {
+.stateface-de:before {
     content: "H";
 }
 
-.state-fl:before {
+.stateface-fl:before {
     content: "I";
 }
 
-.state-ga:before {
+.stateface-ga:before {
     content: "J";
 }
 
-.state-hi:before {
+.stateface-hi:before {
     content: "K";
 }
 
-.state-ia:before {
+.stateface-ia:before {
     content: "L";
 }
 
-.state-id:before {
+.stateface-id:before {
     content: "M";
 }
 
-.state-il:before {
+.stateface-il:before {
     content: "N";
 }
 
-.state-in:before {
+.stateface-in:before {
     content: "O";
 }
 
-.state-ks:before {
+.stateface-ks:before {
     content: "P";
 }
 
-.state-ky:before {
+.stateface-ky:before {
     content: "Q";
 }
 
-.state-la:before {
+.stateface-la:before {
     content: "R";
 }
 
-.state-ma:before {
+.stateface-ma:before {
     content: "S";
 }
 
-.state-md:before {
+.stateface-md:before {
     content: "T";
 }
 
-.state-me:before {
+.stateface-me:before {
     content: "U";
 }
 
-.state-mi:before {
+.stateface-mi:before {
     content: "V";
 }
 
-.state-mn:before {
+.stateface-mn:before {
     content: "W";
 }
 
-.state-mo:before {
+.stateface-mo:before {
     content: "X";
 }
 
-.state-ms:before {
+.stateface-ms:before {
     content: "Y";
 }
 
-.state-mt:before {
+.stateface-mt:before {
     content: "Z";
 }
 
-.state-nc:before {
+.stateface-nc:before {
     content: "a";
 }
 
-.state-nd:before {
+.stateface-nd:before {
     content: "b";
 }
 
-.state-ne:before {
+.stateface-ne:before {
     content: "c";
 }
 
-.state-nh:before {
+.stateface-nh:before {
     content: "d";
 }
 
-.state-nj:before {
+.stateface-nj:before {
     content: "e";
 }
 
-.state-nm:before {
+.stateface-nm:before {
     content: "f";
 }
 
-.state-nv:before {
+.stateface-nv:before {
     content: "g";
 }
 
-.state-ny:before {
+.stateface-ny:before {
     content: "h";
 }
 
-.state-oh:before {
+.stateface-oh:before {
     content: "i";
 }
 
-.state-ok:before {
+.stateface-ok:before {
     content: "j";
 }
 
-.state-or:before {
+.stateface-or:before {
     content: "k";
 }
 
-.state-pa:before {
+.stateface-pa:before {
     content: "l";
 }
 
-.state-ri:before {
+.stateface-ri:before {
     content: "m";
 }
 
-.state-sc:before {
+.stateface-sc:before {
     content: "n";
 }
 
-.state-sd:before {
+.stateface-sd:before {
     content: "o";
 }
 
-.state-tn:before {
+.stateface-tn:before {
     content: "p";
 }
 
-.state-tx:before {
+.stateface-tx:before {
     content: "q";
 }
 
-.state-us:before {
+.stateface-us:before {
     content: "z";
 }
 
-.state-ut:before {
+.stateface-ut:before {
     content: "r";
 }
 
-.state-va:before {
+.stateface-va:before {
     content: "s";
 }
 
-.state-vt:before {
+.stateface-vt:before {
     content: "t";
 }
 
-.state-wa:before {
+.stateface-wa:before {
     content: "u";
 }
 
-.state-wi:before {
+.stateface-wi:before {
     content: "v";
 }
 
-.state-wv:before {
+.stateface-wv:before {
     content: "w";
 }
 
-.state-wy:before {
+.stateface-wy:before {
     content: "x";
 }
 

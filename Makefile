@@ -7,7 +7,10 @@ publish:
 	git push origin gh-pages
 	git checkout master
 
-docs:
+css:
+	python reference/cssclass.py < reference/stateface.json > reference/stateface.css
+
+docs: css
 	cd reference && ruby stateface.rb
 
 pkg:

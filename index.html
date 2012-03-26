@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="reference/styles.css" type="text/css">
+    <link rel="stylesheet" href="reference/stateface.css" type="text/css">
   </head>
   <body>
   <h1><div id="us">z<div id="ak">A</div><div id="hi">K</div></div> <strong>StateFace</strong></h1>
@@ -46,10 +47,30 @@
  }
 </code></pre></li>
 <li><p>Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or <a href="http://propublica.github.com/stateface/reference/stateface.json">download the handy json file</a> for programmatic access.</p></li>
+<li><p>As an alternative to the StateFace code, you can use the <a href="reference/stateface.css">stylesheet</a> put together by <a href="https://github.com/paulsmith">Paul Smith</a> to add CSS classes that correspond to a stateface's two-letter USPS abbreviation.</p></li>
 </ol>
 
 
 <p>If you just want the OpenType font to use in a print layout you can <a href="http://propublica.github.com/stateface/font/StateFace-Regular.otf">download it here</a>.</p>
+
+<h2>CSS Replacement</h2>
+
+<p><a href="https://github.com/paulsmith">Paul Smith</a> put together a <a href="reference/stateface.css">stylesheet</a> that allows for css-based replacement (or prepending) of text. For example, for replacement you'd use:</p>
+
+<pre><code>    &lt;span class="stateface stateface-replace stateface-{abbrev}"&gt;{stateface}&lt;/span&gt;
+</code></pre>
+
+<p>Which could produce <span class="stateface stateface-replace stateface-md">Maryland</span></p>
+
+<p>If you only want to prepend the state shape to the span you can do:</p>
+
+<pre><code>    &lt;span class="stateface stateface-{abbrev}"&gt;{stateface}&lt;/span&gt;
+</code></pre>
+
+<p>So you can write sentences like: I was born in <span class="stateface stateface-co">Colorado</span> and then moved to <span class="stateface stateface-fl">Florida</span>, and graduated from high school in
+<span class="stateface stateface-ca">California</span>.</p>
+
+<p>There is a full demo <a href="reference/cssclass.html">here</a>.</p>
 
 <h2>StateFace Keyboard Map</h2>
 

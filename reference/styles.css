@@ -57,6 +57,18 @@ table {
   border-collapse:collapse;
 }
 
+table.css-table {
+  width: 100%;
+}
+
+table.css-table th, table.css-table td {
+  text-align: left;
+}
+
+table.css-table th {
+  border-bottom: 1px silver solid;
+}
+
 table.StateFace td {
   border-bottom: 1px silver solid;
   padding: 5px;
