@@ -74,6 +74,18 @@ FontSquirrel's [FontFace Generator](http://www.fontsquirrel.com/fontface/generat
 If you want to re-make the `.eps` files the `tools` directory includes a program to do so. You'll need to have [GDAL](http://www.gdal.org/) installed.
 Running `make state-plane` or `make albers` will make a fresh copy.
 
+## Packages and Modules Including StateFace
+
+* [stateface-rails](https://github.com/farski/stateface-rails)
+* [django-stateface](https://github.com/ryanpitts/django-stateface)
+* [latimes-statestyle](https://github.com/datadesk/latimes-statestyle)
+* [AP Style in Ruby, with StateFace](https://gist.github.com/2045456)
+
+## In The Wild
+
+* [Huffington Post Elections Dashboard](http://elections.huffingtonpost.com/2012/general)
+* [ShiftIcons](https://www.shifticons.com/icons/propublica/stateface/)
+
 ## License
 
     Copyright (c) 2012, ProPublica
