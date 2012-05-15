@@ -85,6 +85,7 @@ Running `make state-plane` or `make albers` will make a fresh copy.
 
 * [Huffington Post Elections Dashboard](http://elections.huffingtonpost.com/2012/general)
 * [ShiftIcons](https://www.shifticons.com/icons/propublica/stateface/)
+* [Spokesman-Review Election Center](http://www.spokesman.com/elections/)
 
 ## License
 
