@@ -84,6 +84,9 @@ Running `make state-plane` or `make albers` will make a fresh copy.
 ## In The Wild
 
 * [Huffington Post Elections Dashboard](http://elections.huffingtonpost.com/2012/general)
+* [Washington Post: The Race for House Control](http://www.washingtonpost.com/wp-srv/special/politics/election-map-2012/house/)
+* [The Guardian: Is Barack Obama the President?](http://www.isbarackobamathepresident.com/)
+* [Talking Points Memo: PollTracker](http://polltracker.talkingpointsmemo.com/)
 * [ShiftIcons](https://www.shifticons.com/icons/propublica/stateface/)
 * [Spokesman-Review Election Center](http://www.spokesman.com/elections/)
 
