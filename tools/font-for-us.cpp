@@ -75,6 +75,7 @@ int main(int argc, char **argv){
 
   OGRFeature *feat;
   while((feat = layer->GetNextFeature()) != NULL){
+    std::cout << "yo";
     int field_index = feat->GetFieldIndex(options.name_field);
 
     if(options.filter != NULL && strcmp(feat->GetFieldAsString(field_index), options.filter) != 0){
