@@ -60,3 +60,6 @@ state_planes.keys.each do |k|
   puts command
   `#{command}`
 end
+
+# pr
+`#{ROOT}/font-for-us -s 2 -n stusps -p 'EPSG:3785' -f PR #{ROOT}/us-states/pr-no-water.shp`
