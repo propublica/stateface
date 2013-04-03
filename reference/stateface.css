@@ -173,6 +173,10 @@
     content: "l";
 }
 
+.stateface-pr:before {
+    content: "3";
+}
+
 .stateface-ri:before {
     content: "m";
 }
