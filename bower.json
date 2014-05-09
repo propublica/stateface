@@ -1,0 +1,29 @@
+{
+  "name": "stateface",
+  "version": "1.0.0",
+  "main": [
+    "font/webfont/stateface-regular-webfont.eot",
+    "font/webfont/stateface-regular-webfont.svg",
+    "font/webfont/stateface-regular-webfont.ttf",
+    "font/webfont/stateface-regular-webfont.woff",
+    "reference/stateface.css"
+  ],
+  "dependencies": { },
+  "devDependencies": { },
+  "ignore": [
+    "**/.*",
+    "**/*.txt",
+    "**/*.md",
+    "**/*.mdown",
+    "**/*.rb",
+    "**/*.json",
+    "**/*.py",
+    "**/*.html",
+    "eps",
+    "font/*.glyphs",
+    "font/*.otf",
+    "pkg",
+    "reference/styles.css",
+    "tools"
+  ]
+}
