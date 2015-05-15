@@ -11,7 +11,7 @@ STATES = [
   ["California", "CA", "Calif.", 6, "E"],
   ["Colorado", "CO", "Colo.", 8, "F"],
   ["Connecticut", "CT", "Conn.", 9, "G"],
-  ["Delaware", "DE", "Del.", "10", "H"],
+  ["Delaware", "DE", "Del.", 10, "H"],
   ["District of Columbia", "DC", "D.C.", 11, "y"],
   ["Florida", "FL", "Fla.", 12, "I"],
   ["Georgia", "GA", "Ga.", 13, "J"],
