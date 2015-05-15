@@ -36,13 +36,13 @@ The easiest way to use StateFace on the web is to use FontSquirrel's technique t
 
 3. Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or [download the handy json file](http://propublica.github.com/stateface/reference/stateface.json) for programmatic access.
 
-4. As an alternative to the StateFace code, you can use the [stylesheet](reference/stateface.css) put together by [Paul Smith](https://github.com/paulsmith) to add CSS classes that correspond to a stateface's two-letter USPS abbreviation.
+4. As an alternative to the StateFace code, you can use the [stylesheet](stateface.css) put together by [Paul Smith](https://github.com/paulsmith) to add CSS classes that correspond to a stateface's two-letter USPS abbreviation.
 
 If you just want the OpenType font to use in a print layout you can [download it here](http://propublica.github.com/stateface/font/StateFace-Regular.otf).
 
 ## CSS Replacement
 
-[Paul Smith](https://github.com/paulsmith) put together a [stylesheet](reference/stateface.css) that allows for css-based replacement (or prepending) of text. For example, for replacement you'd use:
+[Paul Smith](https://github.com/paulsmith) put together a [stylesheet](stateface.css) that allows for css-based replacement (or prepending) of text. For example, for replacement you'd use:
 
         <span class="stateface stateface-replace stateface-{abbrev}">{statename}</span>
 
