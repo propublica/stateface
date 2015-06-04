@@ -1,0 +1,239 @@
+/*
+* SASS for http://propublica.github.io/stateface/ icon set.
+* author: https://github.com/amurrell
+*/
+@font-face {
+  font-family: 'sf-regular';
+  src: url("../font/webfont/stateface-regular-webfont.eot");
+  src: url("../font/webfont/stateface-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/webfont/stateface-regular-webfont.woff") format("woff"), url("../font/webfont/stateface-regular-webfont.ttf") format("truetype"), url("../font/webfont/stateface-regular-webfont.svg#sf-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.sf-replace.sf-alabama, .sf-replace.sf-alaska, .sf-replace.sf-arizona, .sf-replace.sf-arkansas, .sf-replace.sf-california, .sf-replace.sf-colorado, .sf-replace.sf-connecticut, .sf-replace.sf-delaware, .sf-replace.sf-florida, .sf-replace.sf-georgia, .sf-replace.sf-hawaii, .sf-replace.sf-idaho, .sf-replace.sf-illinois, .sf-replace.sf-indiana, .sf-replace.sf-iowa, .sf-replace.sf-kansas, .sf-replace.sf-kentucky, .sf-replace.sf-louisiana, .sf-replace.sf-maine, .sf-replace.sf-maryland, .sf-replace.sf-massachusetts, .sf-replace.sf-michigan, .sf-replace.sf-minnesota, .sf-replace.sf-mississippi, .sf-replace.sf-missouri, .sf-replace.sf-montana, .sf-replace.sf-nebraska, .sf-replace.sf-nevada, .sf-replace.sf-new-hampshire, .sf-replace.sf-new-jersey, .sf-replace.sf-new-mexico, .sf-replace.sf-new-york, .sf-replace.sf-north-carolina, .sf-replace.sf-north-dakota, .sf-replace.sf-ohio, .sf-replace.sf-oklahoma, .sf-replace.sf-oregon, .sf-replace.sf-pennsylvania, .sf-replace.sf-rhode-island, .sf-replace.sf-south-carolina, .sf-replace.sf-south-dakota, .sf-replace.sf-tennessee, .sf-replace.sf-texas, .sf-replace.sf-utah, .sf-replace.sf-vermont, .sf-replace.sf-virginia, .sf-replace.sf-washington, .sf-replace.sf-west-virginia, .sf-replace.sf-wisconsin, .sf-replace.sf-wyoming {
+  text-indent: -999em;
+  display: inline-block;
+  position: relative;
+  min-width: 1em;
+}
+.sf-alabama:before, .sf-alaska:before, .sf-arizona:before, .sf-arkansas:before, .sf-california:before, .sf-colorado:before, .sf-connecticut:before, .sf-delaware:before, .sf-florida:before, .sf-georgia:before, .sf-hawaii:before, .sf-idaho:before, .sf-illinois:before, .sf-indiana:before, .sf-iowa:before, .sf-kansas:before, .sf-kentucky:before, .sf-louisiana:before, .sf-maine:before, .sf-maryland:before, .sf-massachusetts:before, .sf-michigan:before, .sf-minnesota:before, .sf-mississippi:before, .sf-missouri:before, .sf-montana:before, .sf-nebraska:before, .sf-nevada:before, .sf-new-hampshire:before, .sf-new-jersey:before, .sf-new-mexico:before, .sf-new-york:before, .sf-north-carolina:before, .sf-north-dakota:before, .sf-ohio:before, .sf-oklahoma:before, .sf-oregon:before, .sf-pennsylvania:before, .sf-rhode-island:before, .sf-south-carolina:before, .sf-south-dakota:before, .sf-tennessee:before, .sf-texas:before, .sf-utah:before, .sf-vermont:before, .sf-virginia:before, .sf-washington:before, .sf-west-virginia:before, .sf-wisconsin:before, .sf-wyoming:before {
+  font-family: "sf-regular";
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sf-replace.sf-alabama:before, .sf-replace.sf-alaska:before, .sf-replace.sf-arizona:before, .sf-replace.sf-arkansas:before, .sf-replace.sf-california:before, .sf-replace.sf-colorado:before, .sf-replace.sf-connecticut:before, .sf-replace.sf-delaware:before, .sf-replace.sf-florida:before, .sf-replace.sf-georgia:before, .sf-replace.sf-hawaii:before, .sf-replace.sf-idaho:before, .sf-replace.sf-illinois:before, .sf-replace.sf-indiana:before, .sf-replace.sf-iowa:before, .sf-replace.sf-kansas:before, .sf-replace.sf-kentucky:before, .sf-replace.sf-louisiana:before, .sf-replace.sf-maine:before, .sf-replace.sf-maryland:before, .sf-replace.sf-massachusetts:before, .sf-replace.sf-michigan:before, .sf-replace.sf-minnesota:before, .sf-replace.sf-mississippi:before, .sf-replace.sf-missouri:before, .sf-replace.sf-montana:before, .sf-replace.sf-nebraska:before, .sf-replace.sf-nevada:before, .sf-replace.sf-new-hampshire:before, .sf-replace.sf-new-jersey:before, .sf-replace.sf-new-mexico:before, .sf-replace.sf-new-york:before, .sf-replace.sf-north-carolina:before, .sf-replace.sf-north-dakota:before, .sf-replace.sf-ohio:before, .sf-replace.sf-oklahoma:before, .sf-replace.sf-oregon:before, .sf-replace.sf-pennsylvania:before, .sf-replace.sf-rhode-island:before, .sf-replace.sf-south-carolina:before, .sf-replace.sf-south-dakota:before, .sf-replace.sf-tennessee:before, .sf-replace.sf-texas:before, .sf-replace.sf-utah:before, .sf-replace.sf-vermont:before, .sf-replace.sf-virginia:before, .sf-replace.sf-washington:before, .sf-replace.sf-west-virginia:before, .sf-replace.sf-wisconsin:before, .sf-replace.sf-wyoming:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-indent: 0;
+}
+
+/* Icons */
+.sf-alabama:before {
+  content: "B";
+}
+
+.sf-alaska:before {
+  content: "A";
+}
+
+.sf-arizona:before {
+  content: "D";
+}
+
+.sf-arkansas:before {
+  content: "C";
+}
+
+.sf-california:before {
+  content: "E";
+}
+
+.sf-colorado:before {
+  content: "F";
+}
+
+.sf-connecticut:before {
+  content: "G";
+}
+
+.sf-delaware:before {
+  content: "H";
+}
+
+.sf-florida:before {
+  content: "I";
+}
+
+.sf-georgia:before {
+  content: "J";
+}
+
+.sf-hawaii:before {
+  content: "K";
+}
+
+.sf-idaho:before {
+  content: "M";
+}
+
+.sf-illinois:before {
+  content: "N";
+}
+
+.sf-indiana:before {
+  content: "O";
+}
+
+.sf-iowa:before {
+  content: "L";
+}
+
+.sf-kansas:before {
+  content: "P";
+}
+
+.sf-kentucky:before {
+  content: "Q";
+}
+
+.sf-louisiana:before {
+  content: "R";
+}
+
+.sf-maine:before {
+  content: "U";
+}
+
+.sf-maryland:before {
+  content: "T";
+}
+
+.sf-massachusetts:before {
+  content: "S";
+}
+
+.sf-michigan:before {
+  content: "V";
+}
+
+.sf-minnesota:before {
+  content: "W";
+}
+
+.sf-mississippi:before {
+  content: "Y";
+}
+
+.sf-missouri:before {
+  content: "X";
+}
+
+.sf-montana:before {
+  content: "Z";
+}
+
+.sf-nebraska:before {
+  content: "c";
+}
+
+.sf-nevada:before {
+  content: "g";
+}
+
+.sf-new-hampshire:before {
+  content: "d";
+}
+
+.sf-new-jersey:before {
+  content: "e";
+}
+
+.sf-new-mexico:before {
+  content: "f";
+}
+
+.sf-new-york:before {
+  content: "h";
+}
+
+.sf-north-carolina:before {
+  content: "a";
+}
+
+.sf-north-dakota:before {
+  content: "b";
+}
+
+.sf-ohio:before {
+  content: "i";
+}
+
+.sf-oklahoma:before {
+  content: "j";
+}
+
+.sf-oregon:before {
+  content: "k";
+}
+
+.sf-pennsylvania:before {
+  content: "l";
+}
+
+.sf-rhode-island:before {
+  content: "m";
+}
+
+.sf-south-carolina:before {
+  content: "n";
+}
+
+.sf-south-dakota:before {
+  content: "o";
+}
+
+.sf-tennessee:before {
+  content: "p";
+}
+
+.sf-texas:before {
+  content: "q";
+}
+
+.sf-utah:before {
+  content: "r";
+}
+
+.sf-vermont:before {
+  content: "t";
+}
+
+.sf-virginia:before {
+  content: "s";
+}
+
+.sf-washington:before {
+  content: "u";
+}
+
+.sf-west-virginia:before {
+  content: "w";
+}
+
+.sf-wisconsin:before {
+  content: "v";
+}
+
+.sf-wyoming:before {
+  content: "x";
+}
