@@ -77,6 +77,9 @@
 
 <p><a href="https://github.com/amurrell">Angela Murrell</a> wrote a <a href="reference/stateface-generated.css">Sass</a> file you can use in your Sass projects. It compiles to this CSS <a href="reference/stateface-generated.css">stylesheet</a>, but you could rewrite the Sass to generate custom CSS easily.
 
+<p>With this Sass file in place, this project will likely be easier to maintain.</p>
+<p><strong>Note:</strong> Support for Guam is in this Sass file, but it's not yet an icon.</p>
+
 <p>To use it to replace,</p>
 
 <pre><code>    &lt;span class="sf-new-mexico sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
@@ -89,8 +92,24 @@
 <pre><code>    &lt;span class="sf-new-mexico"&gt;Words, prepended by a state icon.&lt;/span&gt;
 </code></pre>
 
-<p>Let's borrow that sentence again: I was born in <span class="sf-colorado">Colorado</span> and then moved to <span class="sf-florida">Florida</span>, and graduated from high school in
-<span class="sf-california">California</span>.</p>
+<p>Let's borrow that sentence again: I was born in <span class="sf-colorado">Colorado</span> and then moved to <span class="sf-fl">Florida</span>, and graduated from high school in
+<span class="sf-06">California</span>.</p>
+
+<h4>Added support for FIPS code, state-name, state abbreviation.</h4>
+<p>View <span class="sf-nh">New Hampshire example below:</span></p>
+
+<pre><code>    &lt;span class="sf-new-hampshire"&gt;Words, prepended by a state icon.&lt;/span&gt;
+</code></pre>
+<pre><code>    &lt;span class="sf-nh"&gt;Words, prepended by a state icon.&lt;/span&gt;
+</code></pre>
+<pre><code>    &lt;span class="sf-33"&gt;Words, prepended by a state icon.&lt;/span&gt;
+</code></pre>
+<pre><code>    &lt;span class="sf-new-hampshire sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
+</code></pre>
+<pre><code>    &lt;span class="sf-nh sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
+</code></pre>
+<pre><code>    &lt;span class="sf-33 sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
+</code></pre>
 
 <h2>StateFace Keyboard Map</h2>
 

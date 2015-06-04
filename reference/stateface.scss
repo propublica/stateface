@@ -1,6 +1,10 @@
 /*
 * SASS for http://propublica.github.io/stateface/ icon set.
 * author: https://github.com/amurrell
+
+* also adopted some code from other contributors:
+*  - replacement: Paul Smith https://github.com/paulsmith
+*  - FIPS state abbreviations: https://github.com/joetric
 */
 
 @font-face {
@@ -47,62 +51,69 @@
 
 /* Icons */
 $state_face:
-    "alabama" "B",
-    "alaska" "A",
-    "arizona" "D",
-    "arkansas" "C",
-    "california" "E",
-    "colorado" "F",
-    "connecticut" "G",
-    "delaware" "H",
-    "florida" "I",
-    "georgia" "J",
-    "hawaii" "K",
-    "idaho" "M",
-    "illinois" "N",
-    "indiana" "O",
-    "iowa" "L",
-    "kansas" "P",
-    "kentucky" "Q",
-    "louisiana" "R",
-    "maine" "U",
-    "maryland" "T",
-    "massachusetts" "S",
-    "michigan" "V",
-    "minnesota" "W",
-    "mississippi" "Y",
-    "missouri" "X",
-    "montana" "Z",
-    "nebraska" "c",
-    "nevada" "g",
-    "new-hampshire" "d",
-    "new-jersey" "e",
-    "new-mexico" "f",
-    "new-york" "h",
-    "north-carolina" "a",
-    "north-dakota" "b",
-    "ohio" "i",
-    "oklahoma" "j",
-    "oregon" "k",
-    "pennsylvania" "l",
-    "rhode-island" "m",
-    "south-carolina" "n",
-    "south-dakota" "o",
-    "tennessee" "p",
-    "texas" "q",
-    "utah" "r",
-    "vermont" "t",
-    "virginia" "s",
-    "washington" "u",
-    "west-virginia" "w",
-    "wisconsin" "v",
-    "wyoming" "x";
+    "alabama" "al" "01" "B",
+    "alaska" "ak" "02" "A",
+    "arizona" "az" "04" "D",
+    "arkansas" "ar" "05" "C",
+    "california" "ca" "06" "E",
+    "colorado" "co" "08" "F",
+    "connecticut" "ct" "09" "G",
+    "delaware" "de" "10" "H",
+    "florida" "fl" "12" "I",
+    "georgia" "ga" "13" "J",
+    "hawaii" "hi" "15" "K",
+    "idaho" "id" "16" "M",
+    "illinois" "il" "17" "N",
+    "indiana" "in" "18" "O",
+    "iowa" "ia" "19" "L",
+    "kansas" "ks" "20" "P",
+    "kentucky" "ky" "21" "Q",
+    "louisiana" "la" "22" "R",
+    "maine" "me" "23" "U",
+    "maryland" "md" "24" "T",
+    "massachusetts" "ma" "25" "S",
+    "michigan" "mi" "26" "V",
+    "minnesota" "mn" "27" "W",
+    "mississippi" "ms" "28" "Y",
+    "missouri" "mo" "29" "X",
+    "montana" "mt" "30" "Z",
+    "nebraska" "ne" "31" "c",
+    "nevada" "nv" "32" "g",
+    "new-hampshire" "nh" "33" "d",
+    "new-jersey" "nj" "34" "e",
+    "new-mexico" "nm" "35" "f",
+    "new-york" "ny" "36" "h",
+    "north-carolina" "nc" "37" "a",
+    "north-dakota" "nd" "38" "b",
+    "ohio" "oh" "39" "i",
+    "oklahoma" "ok" "40" "j",
+    "oregon" "or" "41" "k",
+    "pennsylvania" "pa" "42" "l",
+    "rhode-island" "ri" "44" "m",
+    "south-carolina" "sc" "45" "n",
+    "south-dakota" "sd" "46" "o",
+    "tennessee" "tn" "47" "p",
+    "texas" "tx" "48" "q",
+    "utah" "ut" "49" "r",
+    "vermont" "vt" "50" "t",
+    "virginia" "va" "51" "s",
+    "washington" "wa" "53" "u",
+    "west-virginia" "wv" "54" "w",
+    "wisconsin" "wi" "55" "v",
+    "wyoming" "wy" "56" "x",
+    "district-of-columbia" "dc" "11001" "y",
+    "puerto-rico" "pr" "72" "3",
+    "guam" "gu" "66" "4";
+
     
 @each $i in $state_face {
-    .sf-#{nth($i, 1)} {
+    .sf-#{nth($i, 1)},
+    .sf-#{nth($i, 2)},
+    .sf-#{nth($i, 3)},
+    {
 	@extend %state-face;
 	&:before {
-	    content: nth($i, 2);
+	    content: nth($i, 4);
 	}
     }
 }
