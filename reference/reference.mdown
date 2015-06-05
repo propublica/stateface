@@ -57,7 +57,7 @@ So you can write sentences like: I was born in <span class="stateface stateface-
 
 There is a full demo [here](reference/cssclass.html).
 
-[Angela Murrell](https://github.com/amurrell) wrote a [Sass](reference/stateface-generated.css) file you can use in your Sass projects. It compiles to this CSS [stylesheet](reference/stateface-generated.css), but you could rewrite the Sass to generate custom CSS easily.
+[Angela Murrell](https://github.com/amurrell) wrote a [Sass](reference/stateface.scss) file you can use in your Sass projects. It compiles to this CSS [stylesheet](reference/stateface-generated.css), but you could rewrite the Sass to generate custom CSS easily.
 
 <p><strong>Note:</strong> Support for Guam is in this Sass file, but it's not yet an icon. We'll get to it soon.</p>
 
