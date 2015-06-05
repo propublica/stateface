@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="reference/styles.css" type="text/css">
     <link rel="stylesheet" href="reference/stateface.css" type="text/css">
-    <link rel="stylesheet" href="reference/stateface-generated.css" type="text/css">
   </head>
   <body>
   <h1><div id="us">z<div id="ak">A</div><div id="hi">K</div></div> <strong>StateFace</strong></h1>
@@ -48,7 +47,7 @@
  }
 </code></pre></li>
 <li><p>Now, any text that has or inherits the font-family 'StateFaceRegular' style will appear as a state shape. See the character reference below to know which letter will draw which state, or <a href="http://propublica.github.com/stateface/reference/stateface.json">download the handy json file</a> for programmatic access.</p></li>
-<li><p>As an alternative to the StateFace code, you can use the <a href="reference/stateface.css">stylesheet</a> put together by <a href="https://github.com/paulsmith">Paul Smith</a> to add CSS classes that correspond to a stateface's two-letter USPS abbreviation.</p></li>
+<li><p>As an alternative to the StateFace code, you can use the <a href="stateface.css">stylesheet</a> put together by <a href="https://github.com/paulsmith">Paul Smith</a> to add CSS classes that correspond to a stateface's two-letter USPS abbreviation.</p></li>
 </ol>
 
 
@@ -56,7 +55,7 @@
 
 <h2>CSS Replacement</h2>
 
-<p><a href="https://github.com/paulsmith">Paul Smith</a> put together a <a href="reference/stateface.css">stylesheet</a> that allows for css-based replacement (or prepending) of text. For example, for replacement you'd use:</p>
+<p><a href="https://github.com/paulsmith">Paul Smith</a> put together a <a href="stateface.css">stylesheet</a> that allows for css-based replacement (or prepending) of text. For example, for replacement you'd use:</p>
 
 <pre><code>    &lt;span class="stateface stateface-replace stateface-{abbrev}"&gt;{statename}&lt;/span&gt;
 </code></pre>
@@ -73,12 +72,10 @@
 
 <p>There is a full demo <a href="reference/cssclass.html">here</a>.</p>
 
-<h2>Sass &HorizontalLine; Compile CSS for icon replacement</h2>
+<p><a href="https://github.com/amurrell">Angela Murrell</a> wrote a <a href="reference/stateface-generated.css">Sass</a> file you can use in your Sass projects. It compiles to this CSS <a href="reference/stateface-generated.css">stylesheet</a>, but you could rewrite the Sass to generate custom CSS easily.</p>
 
-<p><a href="https://github.com/amurrell">Angela Murrell</a> wrote a <a href="reference/stateface-generated.css">Sass</a> file you can use in your Sass projects. It compiles to this CSS <a href="reference/stateface-generated.css">stylesheet</a>, but you could rewrite the Sass to generate custom CSS easily.
+<p><strong>Note:</strong> Support for Guam is in this Sass file, but it's not yet an icon. We'll get to it soon.</p>
 
-<p>With this Sass file in place, this project will likely be easier to maintain.</p>
-<p><strong>Note:</strong> Support for Guam is in this Sass file, but it's not yet an icon.</p>
 
 <p>To use it to replace,</p>
 
@@ -95,20 +92,14 @@
 <p>Let's borrow that sentence again: I was born in <span class="sf-colorado">Colorado</span> and then moved to <span class="sf-fl">Florida</span>, and graduated from high school in
 <span class="sf-06">California</span>.</p>
 
-<h4>Added support for FIPS code, state-name, state abbreviation.</h4>
-<p>View <span class="sf-nh">New Hampshire example below:</span></p>
+<p>Here's the full range of what you can do with that great primary battleground state, <span class="sf-nh">New Hampshire:</span></p>
 
 <pre><code>    &lt;span class="sf-new-hampshire"&gt;Words, prepended by a state icon.&lt;/span&gt;
-</code></pre>
-<pre><code>    &lt;span class="sf-nh"&gt;Words, prepended by a state icon.&lt;/span&gt;
-</code></pre>
-<pre><code>    &lt;span class="sf-33"&gt;Words, prepended by a state icon.&lt;/span&gt;
-</code></pre>
-<pre><code>    &lt;span class="sf-new-hampshire sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
-</code></pre>
-<pre><code>    &lt;span class="sf-nh sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
-</code></pre>
-<pre><code>    &lt;span class="sf-33 sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
+    &lt;span class="sf-nh"&gt;Words, prepended by a state icon.&lt;/span&gt;
+    &lt;span class="sf-33"&gt;Words, prepended by a state icon.&lt;/span&gt;
+    &lt;span class="sf-new-hampshire sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
+    &lt;span class="sf-nh sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
+    &lt;span class="sf-33 sf-replace"&gt;Words, and you must have them!&lt;/span&gt;
 </code></pre>
 
 <h2>StateFace Keyboard Map</h2>

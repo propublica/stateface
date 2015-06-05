@@ -57,6 +57,34 @@ So you can write sentences like: I was born in <span class="stateface stateface-
 
 There is a full demo [here](reference/cssclass.html).
 
+[Angela Murrell](https://github.com/amurrell) wrote a [Sass](reference/stateface-generated.css) file you can use in your Sass projects. It compiles to this CSS [stylesheet](reference/stateface-generated.css), but you could rewrite the Sass to generate custom CSS easily.
+
+<p><strong>Note:</strong> Support for Guam is in this Sass file, but it's not yet an icon. We'll get to it soon.</p>
+
+To use it to replace,
+
+        <span class="sf-new-mexico sf-replace">Words, and you must have them!</span>
+
+
+Many argue that <span class="sf-california sf-replace">california</span> is the best state.
+
+To use it to prepend,
+
+        <span class="sf-new-mexico">Words, prepended by a state icon.</span>
+
+Let's borrow that sentence again: I was born in <span class="sf-colorado">Colorado</span> and then moved to <span class="sf-fl">Florida</span>, and graduated from high school in
+<span class="sf-06">California</span>.
+
+Here's the full range of what you can do with that great primary battleground state, <span class="sf-nh">New Hampshire:</span>
+
+        <span class="sf-new-hampshire">Words, prepended by a state icon.</span>
+        <span class="sf-nh">Words, prepended by a state icon.</span>
+        <span class="sf-33">Words, prepended by a state icon.</span>
+        <span class="sf-new-hampshire sf-replace">Words, and you must have them!</span>
+        <span class="sf-nh sf-replace">Words, and you must have them!</span>
+        <span class="sf-33 sf-replace">Words, and you must have them!</span>
+
+
 ## StateFace Keyboard Map
 
 <%= table %>

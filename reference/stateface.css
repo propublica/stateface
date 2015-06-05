@@ -17,183 +17,179 @@
     text-indent: 0;
 }
 
-.stateface-ak:before, .stateface-02:before {
+.stateface-ak:before {
     content: "A";
 }
 
-.stateface-al:before, .stateface-01:before {
+.stateface-al:before {
     content: "B";
 }
 
-.stateface-ar:before, .stateface-05:before {
+.stateface-ar:before {
     content: "C";
 }
 
-.stateface-az:before, .stateface-04:before {
+.stateface-az:before {
     content: "D";
 }
 
-.stateface-ca:before, .stateface-06:before {
+.stateface-ca:before {
     content: "E";
 }
 
-.stateface-co:before, .stateface-08:before {
+.stateface-co:before {
     content: "F";
 }
 
-.stateface-ct:before, .stateface-09:before {
+.stateface-ct:before {
     content: "G";
 }
 
-.stateface-dc:before, .stateface-11:before {
+.stateface-dc:before {
     content: "y";
 }
 
-.stateface-de:before, .stateface-10:before {
+.stateface-de:before {
     content: "H";
 }
 
-.stateface-fl:before, .stateface-12:before {
+.stateface-fl:before {
     content: "I";
 }
 
-.stateface-ga:before, .stateface-13:before {
+.stateface-ga:before {
     content: "J";
 }
 
-.stateface-hi:before, .stateface-15:before {
+.stateface-hi:before {
     content: "K";
 }
 
-.stateface-ia:before, .stateface-19:before {
+.stateface-ia:before {
     content: "L";
 }
 
-.stateface-id:before, .stateface-16:before {
+.stateface-id:before {
     content: "M";
 }
 
-.stateface-il:before, .stateface-17:before {
+.stateface-il:before {
     content: "N";
 }
 
-.stateface-in:before, .stateface-18:before {
+.stateface-in:before {
     content: "O";
 }
 
-.stateface-ks:before, .stateface-20:before {
+.stateface-ks:before {
     content: "P";
 }
 
-.stateface-ky:before, .stateface-21:before {
+.stateface-ky:before {
     content: "Q";
 }
 
-.stateface-la:before, .stateface-22:before {
+.stateface-la:before {
     content: "R";
 }
 
-.stateface-ma:before, .stateface-25:before {
+.stateface-ma:before {
     content: "S";
 }
 
-.stateface-md:before, .stateface-24:before {
+.stateface-md:before {
     content: "T";
 }
 
-.stateface-me:before, .stateface-23:before {
+.stateface-me:before {
     content: "U";
 }
 
-.stateface-mi:before, .stateface-26:before {
+.stateface-mi:before {
     content: "V";
 }
 
-.stateface-mn:before, .stateface-27:before {
+.stateface-mn:before {
     content: "W";
 }
 
-.stateface-mo:before, .stateface-29:before {
+.stateface-mo:before {
     content: "X";
 }
 
-.stateface-ms:before, .stateface-28:before {
+.stateface-ms:before {
     content: "Y";
 }
 
-.stateface-mt:before, .stateface-30:before {
+.stateface-mt:before {
     content: "Z";
 }
 
-.stateface-nc:before, .stateface-37:before {
+.stateface-nc:before {
     content: "a";
 }
 
-.stateface-nd:before, .stateface-38:before {
+.stateface-nd:before {
     content: "b";
 }
 
-.stateface-ne:before, .stateface-31:before {
+.stateface-ne:before {
     content: "c";
 }
 
-.stateface-nh:before, .stateface-33:before {
+.stateface-nh:before {
     content: "d";
 }
 
-.stateface-nj:before, .stateface-34:before {
+.stateface-nj:before {
     content: "e";
 }
 
-.stateface-nm:before, .stateface-35:before {
+.stateface-nm:before {
     content: "f";
 }
 
-.stateface-nv:before, .stateface-32:before {
+.stateface-nv:before {
     content: "g";
 }
 
-.stateface-ny:before, .stateface-36:before {
+.stateface-ny:before {
     content: "h";
 }
 
-.stateface-oh:before, .stateface-39:before {
+.stateface-oh:before {
     content: "i";
 }
 
-.stateface-ok:before, .stateface-40:before {
+.stateface-ok:before {
     content: "j";
 }
 
-.stateface-or:before, .stateface-41:before {
+.stateface-or:before {
     content: "k";
 }
 
-.stateface-pa:before, .stateface-42:before {
+.stateface-pa:before {
     content: "l";
 }
 
-.stateface-pr:before, .stateface-72:before {
-    content: "3";
-}
-
-.stateface-ri:before, .stateface-44:before {
+.stateface-ri:before {
     content: "m";
 }
 
-.stateface-sc:before, .stateface-45:before {
+.stateface-sc:before {
     content: "n";
 }
 
-.stateface-sd:before, .stateface-46:before {
+.stateface-sd:before {
     content: "o";
 }
 
-.stateface-tn:before, .stateface-47:before {
+.stateface-tn:before {
     content: "p";
 }
 
-.stateface-tx:before, .stateface-48:before {
+.stateface-tx:before {
     content: "q";
 }
 
@@ -201,30 +197,31 @@
     content: "z";
 }
 
-.stateface-ut:before, .stateface-49:before {
+.stateface-ut:before {
     content: "r";
 }
 
-.stateface-va:before, .stateface-51:before {
+.stateface-va:before {
     content: "s";
 }
 
-.stateface-vt:before, .stateface-50:before {
+.stateface-vt:before {
     content: "t";
 }
 
-.stateface-wa:before, .stateface-53:before {
+.stateface-wa:before {
     content: "u";
 }
 
-.stateface-wi:before, .stateface-55:before {
+.stateface-wi:before {
     content: "v";
 }
 
-.stateface-wv:before, .stateface-54:before {
+.stateface-wv:before {
     content: "w";
 }
 
-.stateface-wy:before, .stateface-56:before {
+.stateface-wy:before {
     content: "x";
 }
+
