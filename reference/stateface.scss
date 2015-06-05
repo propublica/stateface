@@ -1,0 +1,119 @@
+/*
+* SASS for http://propublica.github.io/stateface/ icon set.
+* author: https://github.com/amurrell
+
+* also adopted some code from other contributors:
+*  - replacement: Paul Smith https://github.com/paulsmith
+*  - FIPS state abbreviations: https://github.com/joetric
+*/
+
+@font-face {
+    font-family: 'sf-regular';
+    src: url('../font/webfont/stateface-regular-webfont.eot');
+    src: url('../font/webfont/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/webfont/stateface-regular-webfont.woff') format('woff'),
+	url('../font/webfont/stateface-regular-webfont.ttf') format('truetype'),
+	url('../font/webfont/stateface-regular-webfont.svg#sf-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+%state-face {
+    &.sf-replace {
+	text-indent: -999em;
+	display: inline-block;
+	position: relative;
+	min-width: 1em;
+    }
+    &:before {
+	font-family:"sf-regular";
+	margin-right: 5px;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:1;
+	font-weight:normal;
+	font-style:normal;
+	speak:none;
+	text-decoration:inherit;
+	text-transform:none;
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+    }
+    &.sf-replace:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-indent: 0;
+    }
+}
+
+/* Icons */
+$state_face:
+    "alabama" "al" "01" "B",
+    "alaska" "ak" "02" "A",
+    "arizona" "az" "04" "D",
+    "arkansas" "ar" "05" "C",
+    "california" "ca" "06" "E",
+    "colorado" "co" "08" "F",
+    "connecticut" "ct" "09" "G",
+    "delaware" "de" "10" "H",
+    "florida" "fl" "12" "I",
+    "georgia" "ga" "13" "J",
+    "hawaii" "hi" "15" "K",
+    "idaho" "id" "16" "M",
+    "illinois" "il" "17" "N",
+    "indiana" "in" "18" "O",
+    "iowa" "ia" "19" "L",
+    "kansas" "ks" "20" "P",
+    "kentucky" "ky" "21" "Q",
+    "louisiana" "la" "22" "R",
+    "maine" "me" "23" "U",
+    "maryland" "md" "24" "T",
+    "massachusetts" "ma" "25" "S",
+    "michigan" "mi" "26" "V",
+    "minnesota" "mn" "27" "W",
+    "mississippi" "ms" "28" "Y",
+    "missouri" "mo" "29" "X",
+    "montana" "mt" "30" "Z",
+    "nebraska" "ne" "31" "c",
+    "nevada" "nv" "32" "g",
+    "new-hampshire" "nh" "33" "d",
+    "new-jersey" "nj" "34" "e",
+    "new-mexico" "nm" "35" "f",
+    "new-york" "ny" "36" "h",
+    "north-carolina" "nc" "37" "a",
+    "north-dakota" "nd" "38" "b",
+    "ohio" "oh" "39" "i",
+    "oklahoma" "ok" "40" "j",
+    "oregon" "or" "41" "k",
+    "pennsylvania" "pa" "42" "l",
+    "rhode-island" "ri" "44" "m",
+    "south-carolina" "sc" "45" "n",
+    "south-dakota" "sd" "46" "o",
+    "tennessee" "tn" "47" "p",
+    "texas" "tx" "48" "q",
+    "utah" "ut" "49" "r",
+    "vermont" "vt" "50" "t",
+    "virginia" "va" "51" "s",
+    "washington" "wa" "53" "u",
+    "west-virginia" "wv" "54" "w",
+    "wisconsin" "wi" "55" "v",
+    "wyoming" "wy" "56" "x",
+    "district-of-columbia" "dc" "11001" "y",
+    "puerto-rico" "pr" "72" "3",
+    "guam" "gu" "66" "4";
+
+    
+@each $i in $state_face {
+    .sf-#{nth($i, 1)},
+    .sf-#{nth($i, 2)},
+    .sf-#{nth($i, 3)},
+    {
+	@extend %state-face;
+	&:before {
+	    content: nth($i, 4);
+	}
+    }
+}

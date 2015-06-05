@@ -1,0 +1,679 @@
+/*
+* SASS for http://propublica.github.io/stateface/ icon set.
+* author: https://github.com/amurrell
+
+* also adopted some code from other contributors:
+*  - replacement: Paul Smith https://github.com/paulsmith
+*  - FIPS state abbreviations: https://github.com/joetric
+*/
+@font-face {
+  font-family: 'sf-regular';
+  src: url("../font/webfont/stateface-regular-webfont.eot");
+  src: url("../font/webfont/stateface-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/webfont/stateface-regular-webfont.woff") format("woff"), url("../font/webfont/stateface-regular-webfont.ttf") format("truetype"), url("../font/webfont/stateface-regular-webfont.svg#sf-regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.sf-replace.sf-alabama,
+.sf-replace.sf-al,
+.sf-replace.sf-01, .sf-replace.sf-alaska,
+.sf-replace.sf-ak,
+.sf-replace.sf-02, .sf-replace.sf-arizona,
+.sf-replace.sf-az,
+.sf-replace.sf-04, .sf-replace.sf-arkansas,
+.sf-replace.sf-ar,
+.sf-replace.sf-05, .sf-replace.sf-california,
+.sf-replace.sf-ca,
+.sf-replace.sf-06, .sf-replace.sf-colorado,
+.sf-replace.sf-co,
+.sf-replace.sf-08, .sf-replace.sf-connecticut,
+.sf-replace.sf-ct,
+.sf-replace.sf-09, .sf-replace.sf-delaware,
+.sf-replace.sf-de,
+.sf-replace.sf-10, .sf-replace.sf-florida,
+.sf-replace.sf-fl,
+.sf-replace.sf-12, .sf-replace.sf-georgia,
+.sf-replace.sf-ga,
+.sf-replace.sf-13, .sf-replace.sf-hawaii,
+.sf-replace.sf-hi,
+.sf-replace.sf-15, .sf-replace.sf-idaho,
+.sf-replace.sf-id,
+.sf-replace.sf-16, .sf-replace.sf-illinois,
+.sf-replace.sf-il,
+.sf-replace.sf-17, .sf-replace.sf-indiana,
+.sf-replace.sf-in,
+.sf-replace.sf-18, .sf-replace.sf-iowa,
+.sf-replace.sf-ia,
+.sf-replace.sf-19, .sf-replace.sf-kansas,
+.sf-replace.sf-ks,
+.sf-replace.sf-20, .sf-replace.sf-kentucky,
+.sf-replace.sf-ky,
+.sf-replace.sf-21, .sf-replace.sf-louisiana,
+.sf-replace.sf-la,
+.sf-replace.sf-22, .sf-replace.sf-maine,
+.sf-replace.sf-me,
+.sf-replace.sf-23, .sf-replace.sf-maryland,
+.sf-replace.sf-md,
+.sf-replace.sf-24, .sf-replace.sf-massachusetts,
+.sf-replace.sf-ma,
+.sf-replace.sf-25, .sf-replace.sf-michigan,
+.sf-replace.sf-mi,
+.sf-replace.sf-26, .sf-replace.sf-minnesota,
+.sf-replace.sf-mn,
+.sf-replace.sf-27, .sf-replace.sf-mississippi,
+.sf-replace.sf-ms,
+.sf-replace.sf-28, .sf-replace.sf-missouri,
+.sf-replace.sf-mo,
+.sf-replace.sf-29, .sf-replace.sf-montana,
+.sf-replace.sf-mt,
+.sf-replace.sf-30, .sf-replace.sf-nebraska,
+.sf-replace.sf-ne,
+.sf-replace.sf-31, .sf-replace.sf-nevada,
+.sf-replace.sf-nv,
+.sf-replace.sf-32, .sf-replace.sf-new-hampshire,
+.sf-replace.sf-nh,
+.sf-replace.sf-33, .sf-replace.sf-new-jersey,
+.sf-replace.sf-nj,
+.sf-replace.sf-34, .sf-replace.sf-new-mexico,
+.sf-replace.sf-nm,
+.sf-replace.sf-35, .sf-replace.sf-new-york,
+.sf-replace.sf-ny,
+.sf-replace.sf-36, .sf-replace.sf-north-carolina,
+.sf-replace.sf-nc,
+.sf-replace.sf-37, .sf-replace.sf-north-dakota,
+.sf-replace.sf-nd,
+.sf-replace.sf-38, .sf-replace.sf-ohio,
+.sf-replace.sf-oh,
+.sf-replace.sf-39, .sf-replace.sf-oklahoma,
+.sf-replace.sf-ok,
+.sf-replace.sf-40, .sf-replace.sf-oregon,
+.sf-replace.sf-or,
+.sf-replace.sf-41, .sf-replace.sf-pennsylvania,
+.sf-replace.sf-pa,
+.sf-replace.sf-42, .sf-replace.sf-rhode-island,
+.sf-replace.sf-ri,
+.sf-replace.sf-44, .sf-replace.sf-south-carolina,
+.sf-replace.sf-sc,
+.sf-replace.sf-45, .sf-replace.sf-south-dakota,
+.sf-replace.sf-sd,
+.sf-replace.sf-46, .sf-replace.sf-tennessee,
+.sf-replace.sf-tn,
+.sf-replace.sf-47, .sf-replace.sf-texas,
+.sf-replace.sf-tx,
+.sf-replace.sf-48, .sf-replace.sf-utah,
+.sf-replace.sf-ut,
+.sf-replace.sf-49, .sf-replace.sf-vermont,
+.sf-replace.sf-vt,
+.sf-replace.sf-50, .sf-replace.sf-virginia,
+.sf-replace.sf-va,
+.sf-replace.sf-51, .sf-replace.sf-washington,
+.sf-replace.sf-wa,
+.sf-replace.sf-53, .sf-replace.sf-west-virginia,
+.sf-replace.sf-wv,
+.sf-replace.sf-54, .sf-replace.sf-wisconsin,
+.sf-replace.sf-wi,
+.sf-replace.sf-55, .sf-replace.sf-wyoming,
+.sf-replace.sf-wy,
+.sf-replace.sf-56, .sf-replace.sf-district-of-columbia,
+.sf-replace.sf-dc,
+.sf-replace.sf-11001, .sf-replace.sf-puerto-rico,
+.sf-replace.sf-pr,
+.sf-replace.sf-72, .sf-replace.sf-guam,
+.sf-replace.sf-gu,
+.sf-replace.sf-66 {
+  text-indent: -999em;
+  display: inline-block;
+  position: relative;
+  min-width: 1em;
+}
+.sf-alabama:before,
+.sf-al:before,
+.sf-01:before, .sf-alaska:before,
+.sf-ak:before,
+.sf-02:before, .sf-arizona:before,
+.sf-az:before,
+.sf-04:before, .sf-arkansas:before,
+.sf-ar:before,
+.sf-05:before, .sf-california:before,
+.sf-ca:before,
+.sf-06:before, .sf-colorado:before,
+.sf-co:before,
+.sf-08:before, .sf-connecticut:before,
+.sf-ct:before,
+.sf-09:before, .sf-delaware:before,
+.sf-de:before,
+.sf-10:before, .sf-florida:before,
+.sf-fl:before,
+.sf-12:before, .sf-georgia:before,
+.sf-ga:before,
+.sf-13:before, .sf-hawaii:before,
+.sf-hi:before,
+.sf-15:before, .sf-idaho:before,
+.sf-id:before,
+.sf-16:before, .sf-illinois:before,
+.sf-il:before,
+.sf-17:before, .sf-indiana:before,
+.sf-in:before,
+.sf-18:before, .sf-iowa:before,
+.sf-ia:before,
+.sf-19:before, .sf-kansas:before,
+.sf-ks:before,
+.sf-20:before, .sf-kentucky:before,
+.sf-ky:before,
+.sf-21:before, .sf-louisiana:before,
+.sf-la:before,
+.sf-22:before, .sf-maine:before,
+.sf-me:before,
+.sf-23:before, .sf-maryland:before,
+.sf-md:before,
+.sf-24:before, .sf-massachusetts:before,
+.sf-ma:before,
+.sf-25:before, .sf-michigan:before,
+.sf-mi:before,
+.sf-26:before, .sf-minnesota:before,
+.sf-mn:before,
+.sf-27:before, .sf-mississippi:before,
+.sf-ms:before,
+.sf-28:before, .sf-missouri:before,
+.sf-mo:before,
+.sf-29:before, .sf-montana:before,
+.sf-mt:before,
+.sf-30:before, .sf-nebraska:before,
+.sf-ne:before,
+.sf-31:before, .sf-nevada:before,
+.sf-nv:before,
+.sf-32:before, .sf-new-hampshire:before,
+.sf-nh:before,
+.sf-33:before, .sf-new-jersey:before,
+.sf-nj:before,
+.sf-34:before, .sf-new-mexico:before,
+.sf-nm:before,
+.sf-35:before, .sf-new-york:before,
+.sf-ny:before,
+.sf-36:before, .sf-north-carolina:before,
+.sf-nc:before,
+.sf-37:before, .sf-north-dakota:before,
+.sf-nd:before,
+.sf-38:before, .sf-ohio:before,
+.sf-oh:before,
+.sf-39:before, .sf-oklahoma:before,
+.sf-ok:before,
+.sf-40:before, .sf-oregon:before,
+.sf-or:before,
+.sf-41:before, .sf-pennsylvania:before,
+.sf-pa:before,
+.sf-42:before, .sf-rhode-island:before,
+.sf-ri:before,
+.sf-44:before, .sf-south-carolina:before,
+.sf-sc:before,
+.sf-45:before, .sf-south-dakota:before,
+.sf-sd:before,
+.sf-46:before, .sf-tennessee:before,
+.sf-tn:before,
+.sf-47:before, .sf-texas:before,
+.sf-tx:before,
+.sf-48:before, .sf-utah:before,
+.sf-ut:before,
+.sf-49:before, .sf-vermont:before,
+.sf-vt:before,
+.sf-50:before, .sf-virginia:before,
+.sf-va:before,
+.sf-51:before, .sf-washington:before,
+.sf-wa:before,
+.sf-53:before, .sf-west-virginia:before,
+.sf-wv:before,
+.sf-54:before, .sf-wisconsin:before,
+.sf-wi:before,
+.sf-55:before, .sf-wyoming:before,
+.sf-wy:before,
+.sf-56:before, .sf-district-of-columbia:before,
+.sf-dc:before,
+.sf-11001:before, .sf-puerto-rico:before,
+.sf-pr:before,
+.sf-72:before, .sf-guam:before,
+.sf-gu:before,
+.sf-66:before {
+  font-family: "sf-regular";
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.sf-replace.sf-alabama:before,
+.sf-replace.sf-al:before,
+.sf-replace.sf-01:before, .sf-replace.sf-alaska:before,
+.sf-replace.sf-ak:before,
+.sf-replace.sf-02:before, .sf-replace.sf-arizona:before,
+.sf-replace.sf-az:before,
+.sf-replace.sf-04:before, .sf-replace.sf-arkansas:before,
+.sf-replace.sf-ar:before,
+.sf-replace.sf-05:before, .sf-replace.sf-california:before,
+.sf-replace.sf-ca:before,
+.sf-replace.sf-06:before, .sf-replace.sf-colorado:before,
+.sf-replace.sf-co:before,
+.sf-replace.sf-08:before, .sf-replace.sf-connecticut:before,
+.sf-replace.sf-ct:before,
+.sf-replace.sf-09:before, .sf-replace.sf-delaware:before,
+.sf-replace.sf-de:before,
+.sf-replace.sf-10:before, .sf-replace.sf-florida:before,
+.sf-replace.sf-fl:before,
+.sf-replace.sf-12:before, .sf-replace.sf-georgia:before,
+.sf-replace.sf-ga:before,
+.sf-replace.sf-13:before, .sf-replace.sf-hawaii:before,
+.sf-replace.sf-hi:before,
+.sf-replace.sf-15:before, .sf-replace.sf-idaho:before,
+.sf-replace.sf-id:before,
+.sf-replace.sf-16:before, .sf-replace.sf-illinois:before,
+.sf-replace.sf-il:before,
+.sf-replace.sf-17:before, .sf-replace.sf-indiana:before,
+.sf-replace.sf-in:before,
+.sf-replace.sf-18:before, .sf-replace.sf-iowa:before,
+.sf-replace.sf-ia:before,
+.sf-replace.sf-19:before, .sf-replace.sf-kansas:before,
+.sf-replace.sf-ks:before,
+.sf-replace.sf-20:before, .sf-replace.sf-kentucky:before,
+.sf-replace.sf-ky:before,
+.sf-replace.sf-21:before, .sf-replace.sf-louisiana:before,
+.sf-replace.sf-la:before,
+.sf-replace.sf-22:before, .sf-replace.sf-maine:before,
+.sf-replace.sf-me:before,
+.sf-replace.sf-23:before, .sf-replace.sf-maryland:before,
+.sf-replace.sf-md:before,
+.sf-replace.sf-24:before, .sf-replace.sf-massachusetts:before,
+.sf-replace.sf-ma:before,
+.sf-replace.sf-25:before, .sf-replace.sf-michigan:before,
+.sf-replace.sf-mi:before,
+.sf-replace.sf-26:before, .sf-replace.sf-minnesota:before,
+.sf-replace.sf-mn:before,
+.sf-replace.sf-27:before, .sf-replace.sf-mississippi:before,
+.sf-replace.sf-ms:before,
+.sf-replace.sf-28:before, .sf-replace.sf-missouri:before,
+.sf-replace.sf-mo:before,
+.sf-replace.sf-29:before, .sf-replace.sf-montana:before,
+.sf-replace.sf-mt:before,
+.sf-replace.sf-30:before, .sf-replace.sf-nebraska:before,
+.sf-replace.sf-ne:before,
+.sf-replace.sf-31:before, .sf-replace.sf-nevada:before,
+.sf-replace.sf-nv:before,
+.sf-replace.sf-32:before, .sf-replace.sf-new-hampshire:before,
+.sf-replace.sf-nh:before,
+.sf-replace.sf-33:before, .sf-replace.sf-new-jersey:before,
+.sf-replace.sf-nj:before,
+.sf-replace.sf-34:before, .sf-replace.sf-new-mexico:before,
+.sf-replace.sf-nm:before,
+.sf-replace.sf-35:before, .sf-replace.sf-new-york:before,
+.sf-replace.sf-ny:before,
+.sf-replace.sf-36:before, .sf-replace.sf-north-carolina:before,
+.sf-replace.sf-nc:before,
+.sf-replace.sf-37:before, .sf-replace.sf-north-dakota:before,
+.sf-replace.sf-nd:before,
+.sf-replace.sf-38:before, .sf-replace.sf-ohio:before,
+.sf-replace.sf-oh:before,
+.sf-replace.sf-39:before, .sf-replace.sf-oklahoma:before,
+.sf-replace.sf-ok:before,
+.sf-replace.sf-40:before, .sf-replace.sf-oregon:before,
+.sf-replace.sf-or:before,
+.sf-replace.sf-41:before, .sf-replace.sf-pennsylvania:before,
+.sf-replace.sf-pa:before,
+.sf-replace.sf-42:before, .sf-replace.sf-rhode-island:before,
+.sf-replace.sf-ri:before,
+.sf-replace.sf-44:before, .sf-replace.sf-south-carolina:before,
+.sf-replace.sf-sc:before,
+.sf-replace.sf-45:before, .sf-replace.sf-south-dakota:before,
+.sf-replace.sf-sd:before,
+.sf-replace.sf-46:before, .sf-replace.sf-tennessee:before,
+.sf-replace.sf-tn:before,
+.sf-replace.sf-47:before, .sf-replace.sf-texas:before,
+.sf-replace.sf-tx:before,
+.sf-replace.sf-48:before, .sf-replace.sf-utah:before,
+.sf-replace.sf-ut:before,
+.sf-replace.sf-49:before, .sf-replace.sf-vermont:before,
+.sf-replace.sf-vt:before,
+.sf-replace.sf-50:before, .sf-replace.sf-virginia:before,
+.sf-replace.sf-va:before,
+.sf-replace.sf-51:before, .sf-replace.sf-washington:before,
+.sf-replace.sf-wa:before,
+.sf-replace.sf-53:before, .sf-replace.sf-west-virginia:before,
+.sf-replace.sf-wv:before,
+.sf-replace.sf-54:before, .sf-replace.sf-wisconsin:before,
+.sf-replace.sf-wi:before,
+.sf-replace.sf-55:before, .sf-replace.sf-wyoming:before,
+.sf-replace.sf-wy:before,
+.sf-replace.sf-56:before, .sf-replace.sf-district-of-columbia:before,
+.sf-replace.sf-dc:before,
+.sf-replace.sf-11001:before, .sf-replace.sf-puerto-rico:before,
+.sf-replace.sf-pr:before,
+.sf-replace.sf-72:before, .sf-replace.sf-guam:before,
+.sf-replace.sf-gu:before,
+.sf-replace.sf-66:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-indent: 0;
+}
+
+/* Icons */
+.sf-alabama:before,
+.sf-al:before,
+.sf-01:before {
+  content: "B";
+}
+
+.sf-alaska:before,
+.sf-ak:before,
+.sf-02:before {
+  content: "A";
+}
+
+.sf-arizona:before,
+.sf-az:before,
+.sf-04:before {
+  content: "D";
+}
+
+.sf-arkansas:before,
+.sf-ar:before,
+.sf-05:before {
+  content: "C";
+}
+
+.sf-california:before,
+.sf-ca:before,
+.sf-06:before {
+  content: "E";
+}
+
+.sf-colorado:before,
+.sf-co:before,
+.sf-08:before {
+  content: "F";
+}
+
+.sf-connecticut:before,
+.sf-ct:before,
+.sf-09:before {
+  content: "G";
+}
+
+.sf-delaware:before,
+.sf-de:before,
+.sf-10:before {
+  content: "H";
+}
+
+.sf-florida:before,
+.sf-fl:before,
+.sf-12:before {
+  content: "I";
+}
+
+.sf-georgia:before,
+.sf-ga:before,
+.sf-13:before {
+  content: "J";
+}
+
+.sf-hawaii:before,
+.sf-hi:before,
+.sf-15:before {
+  content: "K";
+}
+
+.sf-idaho:before,
+.sf-id:before,
+.sf-16:before {
+  content: "M";
+}
+
+.sf-illinois:before,
+.sf-il:before,
+.sf-17:before {
+  content: "N";
+}
+
+.sf-indiana:before,
+.sf-in:before,
+.sf-18:before {
+  content: "O";
+}
+
+.sf-iowa:before,
+.sf-ia:before,
+.sf-19:before {
+  content: "L";
+}
+
+.sf-kansas:before,
+.sf-ks:before,
+.sf-20:before {
+  content: "P";
+}
+
+.sf-kentucky:before,
+.sf-ky:before,
+.sf-21:before {
+  content: "Q";
+}
+
+.sf-louisiana:before,
+.sf-la:before,
+.sf-22:before {
+  content: "R";
+}
+
+.sf-maine:before,
+.sf-me:before,
+.sf-23:before {
+  content: "U";
+}
+
+.sf-maryland:before,
+.sf-md:before,
+.sf-24:before {
+  content: "T";
+}
+
+.sf-massachusetts:before,
+.sf-ma:before,
+.sf-25:before {
+  content: "S";
+}
+
+.sf-michigan:before,
+.sf-mi:before,
+.sf-26:before {
+  content: "V";
+}
+
+.sf-minnesota:before,
+.sf-mn:before,
+.sf-27:before {
+  content: "W";
+}
+
+.sf-mississippi:before,
+.sf-ms:before,
+.sf-28:before {
+  content: "Y";
+}
+
+.sf-missouri:before,
+.sf-mo:before,
+.sf-29:before {
+  content: "X";
+}
+
+.sf-montana:before,
+.sf-mt:before,
+.sf-30:before {
+  content: "Z";
+}
+
+.sf-nebraska:before,
+.sf-ne:before,
+.sf-31:before {
+  content: "c";
+}
+
+.sf-nevada:before,
+.sf-nv:before,
+.sf-32:before {
+  content: "g";
+}
+
+.sf-new-hampshire:before,
+.sf-nh:before,
+.sf-33:before {
+  content: "d";
+}
+
+.sf-new-jersey:before,
+.sf-nj:before,
+.sf-34:before {
+  content: "e";
+}
+
+.sf-new-mexico:before,
+.sf-nm:before,
+.sf-35:before {
+  content: "f";
+}
+
+.sf-new-york:before,
+.sf-ny:before,
+.sf-36:before {
+  content: "h";
+}
+
+.sf-north-carolina:before,
+.sf-nc:before,
+.sf-37:before {
+  content: "a";
+}
+
+.sf-north-dakota:before,
+.sf-nd:before,
+.sf-38:before {
+  content: "b";
+}
+
+.sf-ohio:before,
+.sf-oh:before,
+.sf-39:before {
+  content: "i";
+}
+
+.sf-oklahoma:before,
+.sf-ok:before,
+.sf-40:before {
+  content: "j";
+}
+
+.sf-oregon:before,
+.sf-or:before,
+.sf-41:before {
+  content: "k";
+}
+
+.sf-pennsylvania:before,
+.sf-pa:before,
+.sf-42:before {
+  content: "l";
+}
+
+.sf-rhode-island:before,
+.sf-ri:before,
+.sf-44:before {
+  content: "m";
+}
+
+.sf-south-carolina:before,
+.sf-sc:before,
+.sf-45:before {
+  content: "n";
+}
+
+.sf-south-dakota:before,
+.sf-sd:before,
+.sf-46:before {
+  content: "o";
+}
+
+.sf-tennessee:before,
+.sf-tn:before,
+.sf-47:before {
+  content: "p";
+}
+
+.sf-texas:before,
+.sf-tx:before,
+.sf-48:before {
+  content: "q";
+}
+
+.sf-utah:before,
+.sf-ut:before,
+.sf-49:before {
+  content: "r";
+}
+
+.sf-vermont:before,
+.sf-vt:before,
+.sf-50:before {
+  content: "t";
+}
+
+.sf-virginia:before,
+.sf-va:before,
+.sf-51:before {
+  content: "s";
+}
+
+.sf-washington:before,
+.sf-wa:before,
+.sf-53:before {
+  content: "u";
+}
+
+.sf-west-virginia:before,
+.sf-wv:before,
+.sf-54:before {
+  content: "w";
+}
+
+.sf-wisconsin:before,
+.sf-wi:before,
+.sf-55:before {
+  content: "v";
+}
+
+.sf-wyoming:before,
+.sf-wy:before,
+.sf-56:before {
+  content: "x";
+}
+
+.sf-district-of-columbia:before,
+.sf-dc:before,
+.sf-11001:before {
+  content: "y";
+}
+
+.sf-puerto-rico:before,
+.sf-pr:before,
+.sf-72:before {
+  content: "3";
+}
+
+.sf-guam:before,
+.sf-gu:before,
+.sf-66:before {
+  content: "4";
+}
