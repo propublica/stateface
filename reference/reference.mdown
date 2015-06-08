@@ -6,7 +6,7 @@ It's designed to be used at small sizes, and the shapes have been highly simplif
 
 At ProPublica we're using it in our [super PAC tracker](http://projects.propublica.org/pactrack).
 
-Download: [ZIP](http://propublica.github.com/stateface/pkg/stateface.zip) | [tar.gz](http://propublica.github.com/stateface/pkg/stateface.tar.gz) | [Source Repo](http://github.com/propublica/stateface)
+Download: [ZIP](http://propublica.github.com/stateface/pkg/stateface.zip) | [tar.gz](http://propublica.github.com/stateface/pkg/stateface.tar.gz) | [Source Repo](http://github.com/propublica/stateface) | [Bower](#bower)
 
 ## How to Use
 
@@ -92,6 +92,23 @@ Here's the full range of what you can do with that great primary battleground st
 ## Projection Info
 
 Each state is projected using a relevant state plane projection, and the U.S. (lowercase z) is projected using [Texas Centric Albers Equal Area](http://spatialreference.org/ref/epsg/3083/). The source [shapefiles](https://github.com/propublica/stateface/tree/master/tools/us-states) are adapted from [Natural Earth data](http://www.naturalearthdata.com/). See Natural Earth's [terms of use](http://www.naturalearthdata.com/about/terms-of-use/) for details.
+
+<a name="bower"></a>
+## Installing via Bower
+
+You can install and manage StateFace using [Bower](https://bower.io):
+
+    > bower install stateface
+
+Or, add to your `bower.json`:
+
+    {
+      "name": "my bower-powered project",
+      "dependencies": {
+        "stateface": "1.0.0"
+      }
+    }
+
 
 ## Forking and Contributing
 
