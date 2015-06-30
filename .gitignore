@@ -1,5 +1,7 @@
 *.o
 *.svg
+*.map
 font-for-us
 Autosaved
 .DS_Store
+.sass-cache
