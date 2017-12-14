@@ -5,13 +5,16 @@
 *  - FIPS state abbreviations: https://github.com/joetric
 */
 
+// StateFace default root path variable allowing overrides when included in larger SASS project
+$sf-root-path: ".." !default;
+
 @font-face {
   font-family: 'sf-regular';
-  src: url('../font/webfont/stateface-regular-webfont.eot');
-  src: url('../font/webfont/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../font/webfont/stateface-regular-webfont.woff') format('woff'),
-    url('../font/webfont/stateface-regular-webfont.ttf') format('truetype'),
-    url('../font/webfont/stateface-regular-webfont.svg#sf-regular') format('svg');
+  src: url('#{$sf-root-path}/font/webfont/stateface-regular-webfont.eot');
+  src: url('#{$sf-root-path}/font/webfont/stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$sf-root-path}/font/webfont/stateface-regular-webfont.woff') format('woff'),
+    url('#{$sf-root-path}/font/webfont/stateface-regular-webfont.ttf') format('truetype'),
+    url('#{$sf-root-path}/font/webfont/stateface-regular-webfont.svg#sf-regular') format('svg');
   font-style: normal;
   font-weight: normal;
 }
