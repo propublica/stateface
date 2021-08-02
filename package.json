@@ -1,0 +1,10 @@
+{
+  "name": "stateface",
+  "version": "1.0.0",
+  "description": "A font you can use in your web apps when you want tiny state shapes as a design element.",
+  "main": "main.scss",
+  "repository": "https://github.com/stitchfix/stateface.git",
+  "author": "eng@stitchfix.com",
+  "license": "MIT",
+  "private": true
+}
